@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+
+.flex-c-c {
+  @apply flex justify-center items-center;
+}
