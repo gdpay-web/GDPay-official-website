@@ -3,6 +3,6 @@
 </template>
 <script>
 export default {
-  layout: 'withTabs',
+  layout: 'withTabs'
 }
 </script>

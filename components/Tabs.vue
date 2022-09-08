@@ -1,14 +1,8 @@
 <template>
   <div class="mt-[10vw]">
     <div class="flex items-center ml-[4.63vw]">
-      <div
-        class="w-[17.593vw] h-[17.593vw] bg-white rounded-full shadow-gd mr-[3vw] gd-border flex-c-c"
-      >
-        <img
-          :src="tabs.find((e) => e.route === $route.name).src"
-          class="w-[6.667vw]"
-          alt=""
-        />
+      <div class="w-[17.593vw] h-[17.593vw] bg-white rounded-full shadow-gd mr-[3vw] gd-border flex-c-c">
+        <img :src="tabs.find((e) => e.route === $route.name).src" class="w-[6.667vw]" alt="" />
       </div>
       <div>
         <p class="text-blue text-[5.556vw]">
@@ -23,11 +17,7 @@
       <li
         v-for="item in tabs"
         class="w-[20.833vw] leading-[8.426vw] text-[2.963vw] text-center rounded-[1.759vw]"
-        :class="[
-          item.route !== $route.name
-            ? 'text-blue bg-white'
-            : 'text-white bg-blue',
-        ]"
+        :class="[item.route !== $route.name ? 'text-blue bg-white' : 'text-white bg-blue']"
         @click="$router.push({ name: item.route })"
       >
         {{ item.name }}
@@ -43,28 +33,28 @@ const tabs = [
     route: 'solution',
     name: '解决方案',
     title: '一键接入',
-    content: '立即开始收款数字货币',
+    content: '立即开始收款数字货币'
   },
   {
     src: 'images/dice-d20-solid.png',
     route: 'situation',
     name: '应用场景',
     title: '全场景覆盖',
-    content: '助力您的商业新思路',
+    content: '助力您的商业新思路'
   },
   {
     src: 'images/file-code-solid.png',
     route: 'document',
     name: '开发文档',
     title: '开发文档',
-    content: '',
+    content: ''
   },
   {
     src: 'images/download-solid.png',
     route: 'source-download',
     name: '资源下载',
     title: '资源下载',
-    content: '',
-  },
+    content: ''
+  }
 ]
 </script>

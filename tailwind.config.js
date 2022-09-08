@@ -12,6 +12,9 @@ module.exports = {
         blue: '#0b75ff',
       },
       backgroundImage: {
+        'home-bg': "url('static/images/bg.png')",
+        'download-bg': "url('static/images/download-bg.png')",
+        'else-bg': "url('static/images/shutterstock_1124840219.png')",
         tag: "url('static/images/tag.png')",
       },
       boxShadow: {
