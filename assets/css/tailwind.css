@@ -12,3 +12,8 @@ body,
 .flex-c-c {
   @apply flex justify-center items-center;
 }
+
+.tag {
+  /* before:bg-[url(../static/images/tag.png)]  */
+  @apply before:bg-tag before:w-[16.944vw] before:h-[16.852vw] relative before:absolute before:bg-contain before:bg-no-repeat before:top-[-0.3vw] before:left-[-0.093vw] before:pl-[3.701vw] before:pt-[1vw] before:text-white text-[5vw] before:font-bold;
+}
