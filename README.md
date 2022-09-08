@@ -1,4 +1,4 @@
-# GDPay-huang-official-website
+# GDPay-official-website
 
 ## Build Setup
 
