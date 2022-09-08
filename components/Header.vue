@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <header class="pt-[3.246vw] px-[4.63vw] flex justify-between items-center">
+      <img src="../static/images/logo.png" class="w-[24.074vw]" alt="" />
+      <img
+        src="../static/images/menu.png"
+        class="w-[6.944vw]"
+        alt=""
+        @click="visiable = !visiable"
+      />
+    </header>
+    <div class="relative" v-show="visiable">
+      <ul
+        class="absolute right-[4.63vw] w-[31.204vw] h-[50.463vw] bg-white/50 text-center rounded-[0.648vw] text-[2.963vw] text-[#333333] flex flex-col justify-between"
+      >
+        <li class="leading-[10vw] under-line" @click="goto('/')">GDPAY</li>
+        <li class="leading-[10vw] under-line" @click="goto('/solution')">
+          开放支付
+        </li>
+        <li class="leading-[10vw] under-line" @click="goto('/download')">
+          下载APP
+        </li>
+        <li class="leading-[10vw] under-line">最新公告</li>
+        <li class="leading-[10vw]">帮助中心</li>
+      </ul>
+    </div>
+  </div>
+</template>
+<script setup>
+import { ref } from 'vue'
+
+const visiable = ref(false)
+const goto = (path) => {
+  $nuxt.$router.push(path)
+  visiable.value = false
+}
+</script>

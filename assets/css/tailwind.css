@@ -14,6 +14,13 @@ body,
 }
 
 .tag {
-  /* before:bg-[url(../static/images/tag.png)]  */
   @apply before:bg-tag before:w-[16.944vw] before:h-[16.852vw] relative before:absolute before:bg-contain before:bg-no-repeat before:top-[-0.3vw] before:left-[-0.093vw] before:pl-[3.701vw] before:pt-[1vw] before:text-white text-[5vw] before:font-bold;
+}
+
+.under-line {
+  @apply after:w-[24.259vw] after:border-b after:border-b-[0.093vw] after:border-b-black/10 after:inline-block flex flex-col items-center;
+}
+
+.gd-border {
+  @apply border-[0.093vw] border-black/10;
 }

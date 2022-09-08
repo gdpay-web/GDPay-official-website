@@ -1,10 +1,7 @@
 <template>
   <div class="relative">
     <img src="images/bg.png" class="absolute z-[-1]" alt="" />
-    <header class="pt-[3.246vw] px-[4.63vw] flex justify-between items-center">
-      <img src="images/logo.png" class="w-[24.074vw]" alt="" />
-      <img src="images/menu.png" class="w-[6.944vw]" alt="" />
-    </header>
+    <Header />
     <section
       class="mt-[49.63vw] text-[9.259vw] text-blue px-[4.63vw] leading-tight"
     >
@@ -25,21 +22,7 @@
       下载APP
     </button>
     <section class="bg-[#efefef] mt-[11vw] py-[5.556vw]">
-      <div
-        v-for="(item, index) in advantageList"
-        class="w-[90.741vw] rounded-[1.759vw] bg-white mx-auto flex items-center pt-[5vw] pb-[8.426vw] shadow-gd"
-        :class="{ 'mt-[4.63vw]': index }"
-      >
-        <div class="w-[34.537vw]">
-          <img :src="item.src" class="w-[11.852vw] m-auto" alt="" />
-        </div>
-        <div class="w-[53.148vw]">
-          <h3 class="text-blue text-[5.556vw]">{{ item.title }}</h3>
-          <p class="text-[#666666] text-[3.333vw] leading-tight text-justify">
-            {{ item.content }}
-          </p>
-        </div>
-      </div>
+      <CaedWithShadow :dataList="advantageList" />
     </section>
     <Title
       title="关于GD币"
@@ -48,7 +31,7 @@
     />
     <div
       v-for="(item, index) in aboutList"
-      class="w-[90.741vw] rounded-[1.759vw] mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] border-[0.093vw] border-black/10"
+      class="w-[90.741vw] rounded-[1.759vw] mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border"
       :class="{ 'mt-[4.63vw]': index, 'mt-[7.315vw]': !index }"
     >
       <div class="w-[34.537vw]">
@@ -73,14 +56,14 @@
       </p>
     </div>
     <div
-      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[7.5vw] border-[0.093vw] border-black/10 mt-[7.315vw] tag before:content-['1.']"
+      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[7.5vw] gd-border mt-[7.315vw] tag before:content-['1.']"
     >
       <p class="ml-[9.444vw] text-[4.444vw] text-[#333333]">电子支付购买GD币</p>
       <img src="images/mobile-alt-solid.png" class="h-[14.259vw]" alt="" />
     </div>
     <Process title="购买" />
     <div
-      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[6.111vw] border-[0.093vw] border-black/10 tag before:content-['2.']"
+      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.']"
     >
       <p class="ml-[9.444vw] text-[4.444vw] text-[#333333]">
         购买GD币存入GDPAY账户
@@ -89,12 +72,12 @@
     </div>
     <Process title="支付" />
     <div
-      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[5.833vw] border-[0.093vw] border-black/10 tag before:content-['3.']"
+      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[5.833vw] gd-border tag before:content-['3.']"
     >
       <p class="ml-[9.444vw] text-[4.444vw] text-[#333333]">
         随时使用GD币轻松支付给商家
       </p>
-      <img src="images/cart.png" class="h-[11.852vw]" alt="" />
+      <img src="images/cart-w-logo.png" class="h-[11.852vw]" alt="" />
     </div>
     <div class="px-[4.63vw] mt-[7vw]">
       <h3 class="text-blue text-[5vw]">随时兑现</h3>
@@ -103,7 +86,7 @@
       </p>
     </div>
     <div
-      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[5.648vw] border-[0.093vw] border-black/10 mt-[7.315vw] tag before:content-['1.']"
+      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[5.648vw] gd-border mt-[7.315vw] tag before:content-['1.']"
     >
       <p class="ml-[9.444vw] text-[4.444vw] text-[#333333]">
         从商家提取GD币至GDPAY账户
@@ -112,7 +95,7 @@
     </div>
     <Process title="购买" />
     <div
-      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[6.111vw] border-[0.093vw] border-black/10 tag before:content-['2.']"
+      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.']"
     >
       <p class="ml-[9.444vw] text-[4.444vw] text-[#333333]">
         从GDPAY账户卖出GD币
@@ -121,7 +104,7 @@
     </div>
     <Process title="支付" />
     <div
-      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[5.278vw] border-[0.093vw] border-black/10 tag before:content-['3.']"
+      class="w-[90.741vw] h-[25.37vw] rounded-[1.759vw] mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['3.']"
     >
       <p class="ml-[9.444vw] text-[4.444vw] text-[#333333]">获得人民币</p>
       <img src="images/cash.png" class="h-[10.37vw]" alt="" />
@@ -142,7 +125,7 @@
     </div>
     <p class="mt-[12vw] text-[4.444vw] text-[#666666] text-center">支持平台</p>
     <div
-      class="w-[90.741vw] h-[21.296vw] rounded-[1.759vw] mx-auto flex items-center justify-around border-[0.093vw] border-black/10 mt-[3.704vw] mb-[20.556vw]"
+      class="w-[90.741vw] h-[21.296vw] rounded-[1.759vw] mx-auto flex items-center justify-around gd-border mt-[3.704vw] mb-[20.556vw]"
     >
       <img src="images/android-brands.png" class="h-[11.852vw]" alt="" />
       <img src="images/apple-brands.png" class="h-[11.852vw]" alt="" />
@@ -188,8 +171,6 @@
 </template>
 
 <script setup>
-import Title from '~/components/Title.vue'
-import Process from '~/components/Process.vue'
 const footerlist = ['GDPAY', '公司', '开放支付', '帮助中心']
 const socialMediaList = [
   'images/FB.png',
