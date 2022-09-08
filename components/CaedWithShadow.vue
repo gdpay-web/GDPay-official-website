@@ -12,5 +12,5 @@
   </div>
 </template>
 <script setup>
-const props = defineProps(['data', 'index'])
+defineProps(['data', 'index'])
 </script>

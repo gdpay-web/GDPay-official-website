@@ -10,10 +10,7 @@
       <p>汇率，100%互兑</p>
     </section>
     <p class="text-[5.556vw] text-blue mt-[13.148vw] px-[4.63vw]">无需远行即可畅玩全球</p>
-    <button class="text-white text-[4.444vw] bg-blue rounded-[1.759vw] h-[14.815vw] w-[90.741vw] mx-[4.63vw] mt-[35.963vw] flex-c-c">
-      <img src="images/logo-w.png" class="w-[7.593vw] mr-[2vw]" alt="" />
-      下载APP
-    </button>
+    <DownloadButton class="mt-[35.963vw]" type="blue" />
     <section class="bg-[#efefef] mt-[11vw] py-[5.556vw]">
       <CaedWithShadow v-for="(item, index) in advantageList" :data="item" :index="index" :key="item.title" />
     </section>
@@ -89,10 +86,7 @@
         <img src="images/logo-w.png" class="w-[11.204vw] mr-[3.426vw]" alt="" />
         <p class="text-[5.556vw]">现在，请您下载吧</p>
       </section>
-      <button class="text-blue text-[4.444vw] bg-white rounded-[1.759vw] h-[14.815vw] w-[90.741vw] mt-[9.167vw] flex-c-c">
-        <img src="images/logo-blue.png" class="w-[7.593vw] mr-[2vw]" alt="" />
-        下载APP
-      </button>
+      <DownloadButton class="mt-[9.167vw]" type="white" />
       <img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw]" alt="" />
       <ul class="mt-[6.944vw]">
         <li v-for="item in footerlist" class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] rounded-[1.759vw] mb-[3.148vw] mx-auto relative">

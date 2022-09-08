@@ -29,14 +29,5 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: './dist/'
-          server-dir: './www.gdpay8.com/test/'
+          server-dir: './www.gdpay8.com/'
           port: 21212
-    # - name: send default message
-    #   uses: appleboy/telegram-action@master
-    #   with:
-    #     to: ${{ secrets.TELEGRAM_TO }}
-    #     token: ${{ secrets.TELEGRAM_TOKEN }}
-    #     message: |
-    #         亲爱的各位领导:
-    #         小的已经将网页资料部属完毕
-    #         请移驾到 https://www.xn--x9qy6jot9btfq.com/ 查看结果

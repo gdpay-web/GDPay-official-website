@@ -14,5 +14,5 @@
 </template>
 
 <script setup>
-const props = defineProps(['title', 'subtitle'])
+defineProps(['title', 'subtitle'])
 </script>

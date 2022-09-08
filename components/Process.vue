@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-const props = defineProps(['title'])
+defineProps(['title'])
 </script>
