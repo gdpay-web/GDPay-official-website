@@ -1,8 +1,8 @@
 <template>
   <div>
     <header class="pt-[3.246vw] px-[4.63vw] flex justify-between items-center">
-      <img src="../static/images/logo.png" class="w-[24.074vw]" alt="" />
-      <img src="../static/images/menu.png" class="w-[6.944vw]" alt="" @click="visiable = !visiable" />
+      <img src="images/logo.png" class="w-[24.074vw]" alt="" @click="$router.push('/')" />
+      <img src="images/menu.png" class="w-[6.944vw]" alt="" @click="visiable = !visiable" />
     </header>
     <div class="relative" v-show="visiable">
       <ul class="absolute right-[4.63vw] w-[31.204vw] h-[50.463vw] bg-white/50 text-center rounded-[0.648vw] text-[2.963vw] text-[#333333] flex flex-col justify-between">

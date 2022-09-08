@@ -89,8 +89,8 @@
       <DownloadButton class="mt-[9.167vw]" type="white" />
       <img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw]" alt="" />
       <ul class="mt-[6.944vw]">
-        <li v-for="item in footerlist" class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] rounded-[1.759vw] mb-[3.148vw] mx-auto relative">
-          {{ item }}
+        <li v-for="item in footerlist" class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] rounded-[1.759vw] mb-[3.148vw] mx-auto relative" @click="$router.push(item.path)">
+          {{ item.title }}
           <img src="images/arrow-down.png" class="absolute w-[3.333vw] right-[3.741vw] top-[5.741vw]" alt="" />
         </li>
       </ul>
@@ -104,7 +104,12 @@
 </template>
 
 <script setup>
-const footerlist = ['GDPAY', '公司', '开放支付', '帮助中心']
+const footerlist = [
+  { title: 'GDPAY', path: '/' },
+  { title: '公司', path: '' },
+  { title: '开放支付', path: '/solution' },
+  { title: '帮助中心', path: '' }
+]
 const socialMediaList = ['images/FB.png', 'images/twitter.png', 'images/medium.png', 'images/reddit.png']
 const advantageList = [
   {
