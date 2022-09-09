@@ -4,5 +4,6 @@
     <Header />
     <Tabs />
     <Nuxt class="mt-[8vw]" />
+    <Footer />
   </div>
 </template>
