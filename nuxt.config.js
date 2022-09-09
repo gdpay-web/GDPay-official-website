@@ -35,8 +35,8 @@ export default {
     // '@nuxtjs/pwa',
   ],
 
-  router: {
-    base: '/app/'
+  generate: {
+    subFolders: false
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -47,5 +47,11 @@ export default {
   // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    extractCSS: true
+  },
+
+  router: {
+    mode: 'hash'
+  }
 }
