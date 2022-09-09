@@ -35,6 +35,10 @@ export default {
     // '@nuxtjs/pwa',
   ],
 
+  router: {
+    base: '/app/'
+  },
+
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   // pwa: {
   //   manifest: {
