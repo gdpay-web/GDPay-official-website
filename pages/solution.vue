@@ -84,6 +84,6 @@
 </template>
 <script>
 export default {
-  layout: 'withTabs'
+  layout: 'layout-a'
 }
 </script>

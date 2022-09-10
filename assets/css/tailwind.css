@@ -17,10 +17,66 @@ body,
   @apply before:bg-tag before:w-[16.944vw] before:h-[16.852vw] relative before:absolute before:bg-contain before:bg-no-repeat before:top-[-0.3vw] before:left-[-0.093vw] before:pl-[3.701vw] before:pt-[1vw] before:text-white text-[5vw] before:font-bold;
 }
 
+.next-tag {
+  @apply after:w-[6.667vw] after:h-[6.667vw] after:bg-next relative after:absolute after:inline-block after:bg-contain after:bg-no-repeat after:right-0 after:bottom-0;
+}
+
 .under-line {
   @apply after:w-[24.259vw] after:border-b after:border-b-[0.093vw] after:border-b-black/10 after:inline-block flex flex-col items-center;
 }
 
 .gd-border {
   @apply border-[0.093vw] border-black/10;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burger-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+
+.burger-bar::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  width: 16px;
+  height: 2px;
+  background-color: #333;
+  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+}
+
+.burger-bar:first-child::before {
+  top: 14px;
+  transform: translateY(-3px);
+}
+
+.burger-bar:last-child::before {
+  bottom: 14px;
+  transform: translateY(3px);
+}
+
+.menu-opened .burger .burger-bar {
+  transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.menu-opened .burger .burger-bar:first-child {
+  transform: rotate(45deg);
+}
+
+.menu-opened .burger .burger-bar:last-child {
+  transform: rotate(-45deg);
+}
+
+.menu-opened .burger .burger-bar::before {
+  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  transform: none;
 }

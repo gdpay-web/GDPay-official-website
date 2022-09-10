@@ -22,9 +22,9 @@
 <script setup>
 const footerlist = [
   { title: 'GDPAY', path: '/' },
-  { title: '公司', path: '' },
+  { title: '公司', path: '/about' },
   { title: '开放支付', path: '/solution' },
-  { title: '帮助中心', path: '' }
+  { title: '帮助中心', path: '/assist' }
 ]
 const socialMediaList = ['images/FB.png', 'images/twitter.png', 'images/medium.png', 'images/reddit.png']
 </script>

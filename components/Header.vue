@@ -9,8 +9,8 @@
         <li class="leading-[10vw] under-line" @click="goto('/')">GDPAY</li>
         <li class="leading-[10vw] under-line" @click="goto('/solution')">开放支付</li>
         <li class="leading-[10vw] under-line" @click="goto('/download')">下载APP</li>
-        <li class="leading-[10vw] under-line">最新公告</li>
-        <li class="leading-[10vw]">帮助中心</li>
+        <li class="leading-[10vw] under-line" @click="goto('/announcement')">最新公告</li>
+        <li class="leading-[10vw]" @click="goto('/assist')">帮助中心</li>
       </ul>
     </div>
   </div>

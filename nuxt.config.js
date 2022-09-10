@@ -39,12 +39,7 @@ export default {
     subFolders: false
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  // pwa: {
-  //   manifest: {
-  //     lang: 'en'
-  //   }
-  // },
+  router: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

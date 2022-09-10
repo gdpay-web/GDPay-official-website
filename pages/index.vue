@@ -15,21 +15,19 @@
       <CaedWithShadow v-for="(item, index) in advantageList" :data="item" :index="index" :key="item.title" />
     </section>
     <Title title="关于GD币" :subtitle="['使用GDPAY管理、世界通用的、恒定人民币汇率数字资产']" class="mt-[10.648vw]" />
-    <div
-      v-for="(item, index) in aboutList"
-      class="w-[90.741vw] rounded-[1.759vw] mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border"
-      :class="{ 'mt-[4.63vw]': index, 'mt-[7.315vw]': !index }"
-    >
-      <div class="w-[34.537vw]">
-        <img :src="item.src" class="w-[14.907vw] m-auto" alt="" />
-      </div>
-      <div class="w-[53.148vw]">
-        <h3 class="text-blue text-[5vw]">{{ item.title }}</h3>
-        <p class="text-[#666666] text-[3.333vw] leading-tight text-justify">
-          {{ item.content }}
-        </p>
-      </div>
-    </div>
+    <ul>
+      <li v-for="(item, index) in aboutList" class="w-[90.741vw] rounded-[1.759vw] mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border mt-[4.63vw] first:mt-[7.315vw]">
+        <div class="w-[34.537vw]">
+          <img :src="item.src" class="w-[14.907vw] m-auto" alt="" />
+        </div>
+        <div class="w-[53.148vw]">
+          <h3 class="text-blue text-[5vw]">{{ item.title }}</h3>
+          <p class="text-[#666666] text-[3.333vw] leading-tight text-justify">
+            {{ item.content }}
+          </p>
+        </div>
+      </li>
+    </ul>
     <Title title="使用GDPAY" :subtitle="['自由兑换、自由支付EB币']" class="mt-[10.648vw]" />
     <div class="px-[4.63vw] mt-[7vw]">
       <h3 class="text-blue text-[5vw]">轻松支付</h3>

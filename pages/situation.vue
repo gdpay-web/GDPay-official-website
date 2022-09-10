@@ -13,7 +13,7 @@
 <script>
 import Title from '~/components/Title.vue'
 export default {
-  layout: 'withTabs',
+  layout: 'layout-a',
   components: { Title },
   data() {
     return {
