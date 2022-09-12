@@ -31,8 +31,8 @@ const footerlist = reactive({
       title: 'GDPAY',
       active: false,
       list: [
-        { label: '服务条款', path: '' },
-        { label: '隐私条款', path: '' }
+        { label: '服务条款', path: '/agreement/service' },
+        { label: '隐私条款', path: '/agreement/privacy' }
       ]
     },
     {
