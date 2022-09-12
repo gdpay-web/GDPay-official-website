@@ -35,11 +35,9 @@ export default {
     // '@nuxtjs/pwa',
   ],
 
-  generate: {
-    subFolders: false
+  router: {
+    base: ''
   },
-
-  router: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

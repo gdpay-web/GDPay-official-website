@@ -22,12 +22,12 @@
         </div>
         <hr />
         <ul>
-          <li v-for="item2 in item.data" class="text-[3.333vw] mt-[6vw] flex items-center leading-tight pl-[1.481vw]">
+          <li v-for="item2 in item.data" class="text-[3.333vw] mt-[6vw] flex items-center leading-tight pl-[1.481vw]" @click="$router.push(item2.path)">
             <img src="images/A-blue.png" class="w-[1.204vw] h-[2.13vw] mr-[1.759vw]" alt="" />
             {{ item2.title }}
           </li>
         </ul>
-        <button class="text-[2.963vw] text-white w-[20.833vw] h-[6.418vw] border border-blue bg-blue rounded-full mt-[10vw] flex-c-c" @click="$router.push(item.link)">
+        <button class="text-[2.963vw] text-white w-[20.833vw] h-[6.418vw] border border-blue bg-blue rounded-full mt-[10vw] flex-c-c" @click="$router.push(item.path)">
           查看所有
           <img src="images/arrow-down.png" class="h-[1.204vw] -rotate-90 ml-[1vw] mt-[0.2vw]" alt="" />
         </button>
@@ -39,10 +39,17 @@
 const list = [
   {
     title: '交易常见问题',
-    link: '/question',
+    path: '/question',
     data: [{ title: '如何买入GB？' }, { title: '转账成功，但是订单超时被取消了怎么办？' }, { title: '申诉凭证示例' }, { title: 'GDPAY支持哪些付款方式' }, { title: '交易收取费用吗？' }]
   },
-  { title: '新手指南', data: [{ title: '如何买入GB？' }, { title: 'GDpay支持哪些交易方式' }, { title: '如何提币(转帐)?' }, { title: '如何卖出GB?' }, { title: '关于GDpay' }] },
-  { title: '隐私条款', data: [{ title: '隐私条款' }, { title: '服务条款' }] }
+  { title: '新手指南', path: '/guide', data: [{ title: '如何买入GB？' }, { title: 'GDpay支持哪些交易方式' }, { title: '如何提币(转帐)?' }, { title: '如何卖出GB?' }, { title: '关于GDpay' }] },
+  {
+    title: '隐私条款',
+    path: '/agreement',
+    data: [
+      { title: '隐私条款', path: '/agreement/privacy' },
+      { title: '服务条款', path: '/agreement/service' }
+    ]
+  }
 ]
 </script>
