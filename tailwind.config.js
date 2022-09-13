@@ -10,6 +10,8 @@ module.exports = {
         'home-bg': "url('static/images/bg.png')",
         'download-bg': "url('static/images/download-bg.png')",
         'else-bg': "url('static/images/shutterstock_1124840219.png')",
+        'else-bg-pc': "url('static/images/else-bg-pc.png')",
+        'nav-bg': "url('static/images/NAV-BG.png')",
         'input-bg': "url('static/images/input.png')",
         tag: "url('static/images/tag.png')",
         next: 'url("static/images/go-to-detail.png")',

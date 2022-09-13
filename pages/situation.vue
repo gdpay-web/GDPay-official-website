@@ -1,13 +1,39 @@
 <template>
-  <div class="pb-[25vw]">
+  <div class="pb-[25vw] xl:w-[1200px] xl:mx-auto xl:pb-[100px]">
     <Title title="在线服务" />
-    <section class="mt-[6vw]">
-      <CaedWithShadow v-for="(item, index) in list1" :data="item" :index="index" :key="item.title" />
-    </section>
+    <ul class="mt-[11vw] py-[5.556vw] xl:mt-[65px] xl:bg-transparent xl:py-0 xl:flex xl:items-center xl:flex-wrap">
+      <li
+        v-for="(item, index) in list1"
+        class="w-[90.741vw] gd-rounded mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[390px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0 xl:h-[280px]"
+      >
+        <div class="w-[34.537vw] xl:w-full">
+          <img :src="item.src" class="h-[14.907vw] m-auto xl:h-[80px]" alt="" />
+        </div>
+        <div class="w-[53.148vw] xl:w-full xl:p-[30px] xl:text-left">
+          <h3 class="text-blue text-[5vw] xl:text-[27px]">{{ item.title }}</h3>
+          <p class="text-[#666666] text-[3.333vw] leading-tight text-justify xl:text-[18px] xl:mt-[15px]">
+            {{ item.content }}
+          </p>
+        </div>
+      </li>
+    </ul>
     <Title title="其他" class="mt-[8vw]" />
-    <section class="mt-[6vw]">
-      <CaedWithShadow v-for="(item, index) in list2" :data="item" :index="index" :key="item.title" />
-    </section>
+    <ul class="mt-[11vw] py-[5.556vw] xl:mt-[65px] xl:bg-transparent xl:py-0 xl:flex xl:items-center xl:flex-wrap">
+      <li
+        v-for="(item, index) in list2"
+        class="w-[90.741vw] gd-rounded mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[288px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0 xl:h-[280px]"
+      >
+        <div class="w-[34.537vw] xl:w-full">
+          <img :src="item.src" class="h-[14.907vw] m-auto xl:h-[80px]" alt="" />
+        </div>
+        <div class="w-[53.148vw] xl:w-full xl:p-[30px] xl:text-left">
+          <h3 class="text-blue text-[5vw] xl:text-[27px]">{{ item.title }}</h3>
+          <p class="text-[#666666] text-[3.333vw] leading-tight text-justify xl:text-[18px] xl:mt-[15px]">
+            {{ item.content }}
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 <script>

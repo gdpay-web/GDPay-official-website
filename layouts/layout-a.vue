@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-else-bg bg-contain bg-no-repeat">
+  <div class="bg-else-bg bg-contain bg-no-repeat xl:bg-else-bg-pc">
     <Header />
     <Tabs :tabs="tabs" />
     <Nuxt class="mt-[8vw]" />

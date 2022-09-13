@@ -4,11 +4,17 @@
       <img src="images/logo.png" class="w-[24.074vw] xl:w-[173px]" alt="" @click="$router.push('/')" />
       <img src="images/menu.png" class="w-[6.944vw] xl:hidden" alt="" @click="visiable = !visiable" />
       <ul class="text-[#666666] text-[21px] hidden xl:flex">
-        <li class="" @click="goto('/')">GDPAY</li>
-        <li class="ml-[44px]" @click="goto('/solution')">开放支付</li>
-        <li class="ml-[44px]" @click="goto('/download')">下载APP</li>
-        <li class="ml-[44px]" @click="goto('/announcement')">最新公告</li>
-        <li class="ml-[44px]" @click="goto('/assist')">帮助中心</li>
+        <li class="" :class="{ 'text-blue': $route.path === '/' }" @click="goto('/')">GDPAY</li>
+        <li
+          class="ml-[44px]"
+          :class="{ 'text-blue': $route.path === '/solution' || $route.path === '/situation' || $route.path === '/document' || $route.path === '/source-download' }"
+          @click="goto('/solution')"
+        >
+          开放支付
+        </li>
+        <li class="ml-[44px]" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li>
+        <li class="ml-[44px]" :class="{ 'text-blue': $route.path === '/announcement' }" @click="goto('/announcement')">最新公告</li>
+        <li class="ml-[44px]" :class="{ 'text-blue': $route.path === '/assist' }" @click="goto('/assist')">帮助中心</li>
       </ul>
     </header>
     <div class="relative" v-show="visiable">
