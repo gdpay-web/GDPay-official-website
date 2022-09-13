@@ -1,7 +1,7 @@
 <template>
   <div class="mt-[10vw] xl:mt-0 xl:pt-[150px] xl:bg-nav-bg bg-no-repeat bg-contain bg-bottom xl:flex xl:w-[1200px] xl:m-auto xl:pb-[15px] xl:justify-between">
-    <div class="flex items-center ml-[4.63vw]">
-      <div class="w-[17.593vw] h-[17.593vw] bg-white rounded-full shadow-gd mr-[3vw] gd-border flex-c-c xl:w-[96px] xl:h-[96px] xl:mr-[16px]">
+    <div class="flex items-center ml-[4.63vw] xl:w-[300px]">
+      <div class="w-[17.593vw] h-[17.593vw] bg-white rounded-full shadow-gd mr-[3vw] gd-border flex-c-c xl:min-w-[96px] xl:w-[96px] xl:h-[96px] xl:mr-[16px]">
         <img :src="tabs.find((e) => e.route === $route.name).src" class="w-[6.667vw] xl:w-[40px]" alt="" />
       </div>
       <div>

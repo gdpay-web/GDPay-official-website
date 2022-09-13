@@ -21,6 +21,8 @@ body,
 
 .next-tag {
   @apply after:w-[6.667vw] after:h-[6.667vw] after:bg-next relative after:absolute after:inline-block after:bg-contain after:bg-no-repeat after:right-0 after:bottom-0;
+  /* screen xl */
+  @apply xl:after:w-[36px] xl:after:h-[36px] xl:after:bottom-[-2px];
 }
 
 .under-line {
