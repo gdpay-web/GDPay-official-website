@@ -3,11 +3,7 @@
     <BurgerMenu />
     <img src="images/logo.png" class="w-[36.204vw] m-auto" alt="" />
     <div class="flex-c-c mt-[8.148vw]">
-      <input
-        type="text"
-        placeholder="请输入搜索内容..."
-        class="w-[74.074vw] h-[11.111vw] bg-input-bg bg-contain bg-no-repeat text-[#999999] text-[3.333vw] pl-[3.056vw] inline-block rounded-[1.759vw]"
-      />
+      <input type="text" placeholder="请输入搜索内容..." class="w-[74.074vw] h-[11.111vw] bg-input-bg bg-contain bg-no-repeat text-[#999999] text-[3.333vw] pl-[3.056vw] inline-block gd-rounded" />
       <img src="images/search-btn.png" class="h-[11.111vw] ml-[-11.111vw]" alt="" />
     </div>
     <section class="px-[4.63vw] mt-[15vw] pb-[15vw]">

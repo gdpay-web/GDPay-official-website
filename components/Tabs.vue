@@ -16,7 +16,7 @@
     <ul class="flex px-[3.981vw] justify-center mt-[5.278vw]">
       <li
         v-for="item in tabs"
-        class="w-[20.833vw] leading-[8.426vw] text-[2.963vw] text-center rounded-[1.759vw] mx-[1.3vw]"
+        class="w-[20.833vw] leading-[8.426vw] text-[2.963vw] text-center gd-rounded mx-[1.3vw]"
         :class="[item.route !== $route.name ? 'text-blue bg-white' : 'text-white bg-blue']"
         @click="$router.push({ name: item.route })"
       >
