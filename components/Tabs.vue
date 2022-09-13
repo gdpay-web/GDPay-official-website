@@ -13,7 +13,7 @@
         </p>
       </div>
     </div>
-    <ul class="flex px-[3.981vw] justify-center mt-[5.278vw] xl:mt-[50px] xl:pr-[130px]">
+    <ul class="flex px-[3.981vw] justify-center mt-[5.278vw] xl:mt-[50px] xl:pl-0 xl:pr-[130px]">
       <li
         v-for="item in tabs"
         class="w-[20.833vw] leading-[8.426vw] text-[2.963vw] text-center gd-rounded mx-[1.3vw] xl:w-[113px] xl:leading-[45px] xl:text-[16px]"
