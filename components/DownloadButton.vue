@@ -11,15 +11,7 @@
 </template>
 <script setup>
 import json from 'static/config.json'
-import { onMounted, ref } from 'vue'
 defineProps(['type'])
 
-const androidUrl = ref('')
-const IOSURL = ref('')
-onMounted(() => {
-  androidUrl.value = json.androidURL
-  IOSURL.value = json.IOSURL
-})
-
-const download = () => (location.href = /iPad|iPhone/i.test(navigator.userAgent) ? IOSURL.value : androidUrl.value)
+const download = () => (location.href = /iPad|iPhone/i.test(navigator.userAgent) ? json.IOSURL : json.androidURL)
 </script>

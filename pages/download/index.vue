@@ -7,7 +7,7 @@
       <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25.2px] xl:text-left">GD币 - 世界通用数字资产，恒定人民币汇率</p>
       <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25.2px] xl:text-left">100%互兑 无需远行即可畅玩全球</p>
       <div class="w-[555px] hidden xl:inline-block text-center">
-        <img src="images/qrcode.png" class="w-[150px] mt-[50px] inline-block" alt="" />
+        <canvas id="canvas" class="w-[150px] mt-[50px] inline-block"></canvas>
         <p class="text-[20px] text-blue mt-[20px]">100%互兑 无需远行即可畅玩全球</p>
       </div>
       <button class="text-white text-[4.444vw] bg-blue gd-rounded h-[14.815vw] w-[90.741vw] mx-[4.63vw] mt-[100vw] flex-c-c mb-[10vw] xl:hidden">
@@ -18,3 +18,15 @@
     <Footer />
   </div>
 </template>
+
+<script setup>
+import qrcode from 'qrcode'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay8.com/download/redirect', { width: 150 }, function (error) {
+    if (error) console.error(error)
+    console.log('success!')
+  })
+})
+</script>

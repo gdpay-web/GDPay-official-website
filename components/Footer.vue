@@ -31,7 +31,7 @@
         </ul>
       </div>
       <div class="px-[19.259vw] xl:w-[250px] xl:pt-[35px] xl:px-0 xl:flex xl:flex-col xl:items-end xl:ml-[340px]">
-        <img src="images/qrcode.png" class="hidden w-[150px] xl:block" alt="" />
+        <canvas id="canvas2" class="hidden w-[150px] xl:block"></canvas>
         <img src="images/contact-pc.png" class="hidden w-[250px] mt-[33px] xl:block cursor-pointer" alt="" />
         <ul class="flex mt-[10.648vw] justify-between xl:px-0 xl:mt-[43px] xl:w-[250px]">
           <li v-for="item in socialMediaList">
@@ -44,6 +44,15 @@
 </template>
 <script setup>
 import { reactive } from 'vue'
+import qrcode from 'qrcode'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay8.com/download/redirect', { width: 150 }, function (error) {
+    if (error) console.error(error)
+    console.log('success!')
+  })
+})
 
 const footerlist = reactive({
   data: [
