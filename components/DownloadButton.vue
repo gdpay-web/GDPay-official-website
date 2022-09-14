@@ -9,17 +9,24 @@
     下载APP
   </button>
 </template>
-<script setup>
-import json from 'static/config.json'
-import { onMounted, ref } from 'vue'
-defineProps(['type'])
-
-const androidUrl = ref('')
-const IOSURL = ref('')
-onMounted(() => {
-  androidUrl.value = json.androidURL
-  IOSURL.value = json.IOSURL
-})
-
-const download = () => (location.href = /iPad|iPhone/i.test(navigator.userAgent) ? IOSURL.value : androidUrl.value)
+<script>
+export default {
+  props: ['type'],
+  data() {
+    return {
+      conf: []
+    }
+  },
+  activated() {
+    this.$fetch()
+  },
+  methods: {
+    download() {
+      location.href = /iPad|iPhone/i.test(navigator.userAgent) ? this.conf.IOSURL : this.conf.androidURL
+    }
+  },
+  async fetch() {
+    this.conf = await fetch('http://localhost:3000/config.json')
+  }
+}
 </script>
