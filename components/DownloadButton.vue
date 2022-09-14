@@ -10,14 +10,16 @@
   </button>
 </template>
 <script setup>
+import json from 'static/config.json'
+import { onMounted, ref } from 'vue'
 defineProps(['type'])
 
-const androidUrl = 'https://zhqp-xjp.oss-ap-southeast-1.aliyuncs.com/gdpay/gdpay_v1.01.apk'
-const download = () => {
-  if (/iPad|iPhone/i.test(navigator.userAgent)) {
-    // 当前设备是移动设备
-  } else {
-    location.href = androidUrl
-  }
-}
+const androidUrl = ref('')
+const IOSURL = ref('')
+onMounted(() => {
+  androidUrl.value = json.androidURL
+  IOSURL.value = json.IOSURL
+})
+
+const download = () => (location.href = /iPad|iPhone/i.test(navigator.userAgent) ? IOSURL.value : androidUrl.value)
 </script>
