@@ -26,7 +26,7 @@ export default {
     }
   },
   async fetch() {
-    this.conf = await fetch('http://localhost:3000/config.json')
+    this.conf = await fetch('https://www.gdpay8.com/config.json')
   }
 }
 </script>
