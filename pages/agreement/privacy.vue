@@ -1,9 +1,9 @@
 <template>
-  <div class="text-[3.333vw] text-[#666666] px-[4.9vw]">
-    <p class="text-[3.704vw] mt-[4.815vw] font-bold">{{ data.title }}</p>
-    <p class="text-[2.407vw] my-[6.5vw] text-[#999999]">{{ data.date }}</p>
+  <div class="text-[3.333vw] text-[#666666] px-[4.9vw] xl:w-[1200px] xl:m-auto xl:px-0">
+    <p class="text-[3.704vw] mt-[4.815vw] font-bold xl:text-[22px]">{{ data.title }}</p>
+    <p class="text-[2.407vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">{{ data.date }}</p>
     <div>
-      <p v-for="line in data.content" class="text-[2.963vw] mt-[2vw] text-justify">{{ line }}</p>
+      <p v-for="line in data.content" class="text-[2.963vw] mt-[2vw] text-justify xl:text-[18px]">{{ line }}</p>
     </div>
   </div>
 </template>

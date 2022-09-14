@@ -9,7 +9,11 @@
         <DownloadButton class="mt-[9.167vw] xl:hidden" type="white" />
         <img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw] xl:hidden" alt="" />
         <ul class="mt-[6.944vw] xl:flex xl:justify-between xl:mt-[70px]">
-          <li v-for="(item, index) in footerlist.data" class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden" @click="toggle(index)">
+          <li
+            v-for="(item, index) in footerlist.data"
+            class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden"
+            @click="toggle(item.active, index)"
+          >
             {{ item.title }}
             <img src="images/arrow-down.png" class="absolute w-[3.333vw] right-[3.741vw] top-[5.741vw]" alt="" />
             <div v-show="item.active">
@@ -81,10 +85,14 @@ const footerlist = reactive({
 
 const socialMediaList = ['images/FB.png', 'images/twitter.png', 'images/medium.png', 'images/reddit.png']
 
-const toggle = (index) => {
-  footerlist.data.forEach((e, i) => {
-    e.active = index === i ? true : false
-  })
+const toggle = (active, index) => {
+  if (active) {
+    footerlist.data[index].active = false
+  } else {
+    footerlist.data.forEach((e, i) => {
+      e.active = index === i ? true : false
+    })
+  }
 }
 
 const link = (path) => {

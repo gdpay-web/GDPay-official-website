@@ -3,7 +3,7 @@
     <Header class="hidden xl:block" />
     <BurgerMenu class="xl:hidden" />
     <img src="images/logo.png" class="w-[36.204vw] m-auto xl:w-[260px]" alt="" />
-    <section class="px-[4.63vw] mt-[15vw] pb-[15vw] xl:w-[1200px] xl:mx-auto">
+    <section class="px-[4.63vw] mt-[15vw] pb-[15vw] xl:w-[1200px] xl:mx-auto xl:mt-[100px]">
       <p class="text-blue text-[4.167vw] font-medium xl:text-[23px]">Featured Articles</p>
       <hr />
       <p class="text-[3.333vw] mt-[3.5vw] xl:text-[18px] xl:mt-[20px]">警惕新型诈骗！！！</p>

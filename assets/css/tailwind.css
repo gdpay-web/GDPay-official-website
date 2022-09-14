@@ -26,7 +26,7 @@ body,
 }
 
 .under-line {
-  @apply after:w-[24.259vw] after:border-b after:border-b-[0.093vw] after:border-b-black/10 after:inline-block flex flex-col items-center;
+  @apply after:w-[24.259vw] after:border-b-[0.093vw] after:border-b-black/10 after:inline-block flex flex-col items-center;
 }
 
 .gd-border {
@@ -34,7 +34,9 @@ body,
 }
 
 .gd-rounded {
-  @apply rounded-[1.759vw] xl:rounded-[10px];
+  @apply rounded-[1.759vw];
+  /* screen xl */
+  @apply xl:rounded-[10px];
 }
 
 .burger {
