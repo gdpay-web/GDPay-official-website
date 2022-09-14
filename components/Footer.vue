@@ -9,6 +9,7 @@
         <DownloadButton class="mt-[9.167vw] xl:hidden" type="white" />
         <img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw] xl:hidden" alt="" />
         <ul class="mt-[6.944vw] xl:flex xl:justify-between xl:mt-[70px]">
+          <!-- mobile -->
           <li
             v-for="(item, index) in footerlist.data"
             class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden"
@@ -20,7 +21,8 @@
               <p class="text-[#82abff] leading-loose" v-for="l in item.list" @click="link(l.path)">{{ l.label }}</p>
             </div>
           </li>
-          <li v-for="(item, index) in footerlist.data" class="hidden text-center gd-rounded mb-[3.148vw] relative xl:block xl:text-left xl:text-[24px]">
+          <!-- pc -->
+          <li v-for="(item, index) in footerlist.data" class="hidden text-center gd-rounded mb-[3.148vw] relative xl:block xl:text-left xl:text-[24px] cursor-pointer">
             <p class="font-bold">{{ item.title }}</p>
             <div class="mt-[30px]">
               <p class="text-[#82abff] leading-loose xl:text-[#ffffff] xl:text-[18px]" v-for="l in item.list" @click="link(l.path)">{{ l.label }}</p>
@@ -30,10 +32,10 @@
       </div>
       <div class="px-[19.259vw] xl:w-[250px] xl:pt-[35px] xl:px-0 xl:flex xl:flex-col xl:items-end xl:ml-[340px]">
         <img src="images/qrcode.png" class="hidden w-[150px] xl:block" alt="" />
-        <img src="images/contact-pc.png" class="hidden w-[250px] mt-[33px] xl:block" alt="" />
+        <img src="images/contact-pc.png" class="hidden w-[250px] mt-[33px] xl:block cursor-pointer" alt="" />
         <ul class="flex mt-[10.648vw] justify-between xl:px-0 xl:mt-[43px] xl:w-[250px]">
           <li v-for="item in socialMediaList">
-            <img :src="item" class="w-[9.722vw] xl:w-[42px]" alt="" />
+            <img :src="item" class="w-[9.722vw] xl:w-[42px] cursor-pointer" alt="" />
           </li>
         </ul>
       </div>

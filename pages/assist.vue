@@ -8,7 +8,7 @@
       <hr />
       <p class="text-[3.333vw] mt-[3.5vw] xl:text-[18px] xl:mt-[20px]">警惕新型诈骗！！！</p>
       <button
-        class="text-[2.963vw] text-blue w-[20.833vw] h-[6.418vw] border border-blue rounded-full mt-[3vw] xl:w-[113px] xl:h-[35px] xl:text-[16px] xl:mt-[20px]"
+        class="text-[2.963vw] text-blue w-[20.833vw] h-[6.418vw] border border-blue rounded-full mt-[3vw] xl:w-[113px] xl:h-[35px] xl:text-[16px] xl:mt-[20px] cursor-pointer"
         @click="$router.push('/announcement')"
       >
         公告中心
@@ -21,13 +21,17 @@
           </div>
           <hr />
           <ul>
-            <li v-for="item2 in item.data" class="text-[3.333vw] mt-[6vw] flex items-center leading-tight pl-[1.481vw] xl:pl-[10px] xl:text-[18px] xl:mt-[30px]" @click="$router.push(item2.path)">
+            <li
+              v-for="item2 in item.data"
+              class="text-[3.333vw] mt-[6vw] flex items-center leading-tight pl-[1.481vw] xl:pl-[10px] xl:text-[18px] xl:mt-[30px] cursor-pointer"
+              @click="$router.push(item2.path)"
+            >
               <img src="images/A-blue.png" class="w-[1.204vw] h-[2.13vw] mr-[1.759vw] xl:w-[6px] xl:h-[11px] xl:mr-[5px]" alt="" />
               {{ item2.title }}
             </li>
           </ul>
           <button
-            class="text-[2.963vw] text-white w-[20.833vw] h-[6.418vw] border border-blue bg-blue rounded-full mt-[10vw] flex-c-c xl:w-[113px] xl:h-[35px] xl:text-[16px] xl:mt-[20px]"
+            class="text-[2.963vw] text-white w-[20.833vw] h-[6.418vw] border border-blue bg-blue rounded-full mt-[10vw] flex-c-c xl:w-[113px] xl:h-[35px] xl:text-[16px] xl:mt-[20px] cursor-pointer"
             @click="$router.push(item.path)"
           >
             查看所有

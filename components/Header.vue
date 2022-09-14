@@ -1,20 +1,20 @@
 <template>
   <div>
     <header class="pt-[3.246vw] px-[4.63vw] flex justify-between items-center xl:h-[79px] xl:pt-0 xl:px-[30px] xl:bg-white xl:shadow-gd-pc xl:fixed xl:w-full xl:z-10 xl:top-0">
-      <img src="images/logo.png" class="w-[24.074vw] xl:w-[173px]" alt="" @click="$router.push('/')" />
+      <img src="images/logo.png" class="w-[24.074vw] xl:w-[173px] cursor-pointer" alt="" @click="$router.push('/')" />
       <img src="images/menu.png" class="w-[6.944vw] xl:hidden" alt="" @click="visiable = !visiable" />
       <ul class="text-[#666666] text-[21px] hidden xl:flex">
-        <li class="" :class="{ 'text-blue': $route.path === '/' }" @click="goto('/')">GDPAY</li>
+        <li class="cursor-pointer" :class="{ 'text-blue': $route.path === '/' }" @click="goto('/')">GDPAY</li>
         <li
-          class="ml-[44px]"
+          class="ml-[44px] cursor-pointer"
           :class="{ 'text-blue': $route.path === '/solution' || $route.path === '/situation' || $route.path === '/document' || $route.path === '/source-download' }"
           @click="goto('/solution')"
         >
           开放支付
         </li>
-        <li class="ml-[44px]" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li>
-        <li class="ml-[44px]" :class="{ 'text-blue': $route.path === '/announcement' }" @click="goto('/announcement')">最新公告</li>
-        <li class="ml-[44px]" :class="{ 'text-blue': $route.path === '/assist' }" @click="goto('/assist')">帮助中心</li>
+        <li class="ml-[44px] cursor-pointer" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li>
+        <li class="ml-[44px] cursor-pointer" :class="{ 'text-blue': $route.path === '/announcement' }" @click="goto('/announcement')">最新公告</li>
+        <li class="ml-[44px] cursor-pointer" :class="{ 'text-blue': $route.path === '/assist' }" @click="goto('/assist')">帮助中心</li>
       </ul>
     </header>
     <div class="relative" v-show="visiable">

@@ -23,7 +23,10 @@
           <img src="images/apple-brands.png" class="h-[9.352vw] xl:h-[40px] mx-[10vw] xl:mx-[20px]" alt="" />
           <img src="images/HTML5.png" class="h-[9.352vw] xl:h-[40px]" alt="" />
         </div>
-        <button class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto xl:w-[329px] xl:text-[18px] xl:h-[68px]" @click="$router.push('/source-download')">
+        <button
+          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto xl:w-[329px] xl:text-[18px] xl:h-[68px] cursor-pointer"
+          @click="$router.push('/source-download')"
+        >
           <img src="images/download-solid-white.png" class="w-[4.815vw] mr-[2vw] xl:w-[26px] xl:mr-[10px]" alt="" />
           资源下载
         </button>
@@ -39,7 +42,7 @@
           </div>
         </div>
         <button
-          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto mt-[4vw] xl:w-[329px] xl:text-[18px] xl:h-[68px] xl:mt-[50px]"
+          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto mt-[4vw] xl:w-[329px] xl:text-[18px] xl:h-[68px] xl:mt-[50px] cursor-pointer"
           @click="$router.push('/document')"
         >
           <img src="images/file-code-solid-white.png" class="w-[4.815vw] mr-[2vw] xl:w-[26px] xl:mr-[10px]" alt="" />

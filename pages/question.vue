@@ -2,7 +2,10 @@
   <div class="flex-c-c flex-col text-[3.333vw] text-[#666666] xl:pt-[200px]">
     <p class="text-[4.63vw] mt-[4.815vw] text-blue xl:text-[36px]">交易常见问题</p>
     <ul class="xl:flex xl:flex-wrap xl:w-[1200px] xl:mx-auto xl:justify-between">
-      <li class="w-[90.741vw] gd-border gd-rounded next-tag pl-[3.5vw] pr-[5vw] pb-[4.3vw] mt-[1.852vw] first:mt-[3.148vw] xl:w-[49%] xl:first:mt-[1.852vw] xl:pb-[20px]" v-for="item in list">
+      <li
+        class="w-[90.741vw] gd-border gd-rounded next-tag pl-[3.5vw] pr-[5vw] pb-[4.3vw] mt-[1.852vw] first:mt-[3.148vw] xl:w-[49%] xl:first:mt-[1.852vw] xl:pb-[20px] cursor-pointer"
+        v-for="item in list"
+      >
         <p class="text-[3.704vw] mt-[2.143vw] xl:text-[20px] xl:mt-[17px]">{{ item.title }}</p>
         <p class="text-[2.407vw] text-right my-[2.314vw] text-[#999999] xl:text-[13px] xl:my-[10px]">{{ item.date }}</p>
         <p class="text-[2.963vw] text-justify xl:text-[16px]">{{ item.content }}</p>
