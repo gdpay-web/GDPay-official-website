@@ -2,7 +2,7 @@
   <div class="bg-else-bg bg-contain bg-no-repeat pt-[21.667vw] text-[#666666] xl:bg-else-bg-pc xl:pt-[200px]">
     <Header class="hidden xl:block" />
     <BurgerMenu class="xl:hidden" />
-    <img src="images/logo.png" class="w-[36.204vw] m-auto xl:w-[260px]" alt="" />
+    <img src="images/logo.png" class="w-[36.204vw] m-auto xl:w-[260px]" alt="" @click="$router.push('/')" />
     <section class="px-[4.63vw] mt-[15vw] pb-[15vw] xl:w-[1200px] xl:mx-auto xl:mt-[100px]">
       <p class="text-blue text-[4.167vw] font-medium xl:text-[23px]">Featured Articles</p>
       <hr />
