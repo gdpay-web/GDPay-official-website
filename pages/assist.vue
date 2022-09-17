@@ -47,9 +47,9 @@ const list = [
   {
     title: '交易常见问题',
     path: '/question',
-    data: [{ title: '如何买入GB？' }, { title: '转账成功，但是订单超时被取消了怎么办？' }, { title: '申诉凭证示例' }, { title: 'GDPAY支持哪些付款方式' }, { title: '交易收取费用吗？' }]
+    data: [{ title: '如何买入GDB？' }, { title: '转账成功，但是订单超时被取消了怎么办？' }, { title: '申诉凭证示例' }, { title: 'GDPAY支持哪些付款方式' }, { title: '交易收取费用吗？' }]
   },
-  { title: '新手指南', path: '/guide', data: [{ title: '如何买入GB？' }, { title: 'GDpay支持哪些交易方式' }, { title: '如何提币(转帐)?' }, { title: '如何卖出GB?' }, { title: '关于GDpay' }] },
+  { title: '新手指南', path: '/guide', data: [{ title: '如何买入GDB？' }, { title: 'GDpay支持哪些交易方式' }, { title: '如何提币(转帐)?' }, { title: '如何卖出GDB?' }, { title: '关于GDpay' }] },
   {
     title: '隐私条款',
     path: '/agreement',

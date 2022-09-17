@@ -32,7 +32,7 @@
           </div>
         </li>
       </ul>
-      <Title title="使用GDPAY" :subtitle="['自由兑换、自由支付EB币']" class="mt-[10.648vw] xl:mt-[130px]" />
+      <Title title="使用GDPAY" :subtitle="['自由兑换、自由支付GDB币']" class="mt-[10.648vw] xl:mt-[130px]" />
       <div class="px-[4.63vw] mt-[7vw] xl:mt-[60px] xl:px-0">
         <h3 class="text-blue text-[5vw] xl:text-[37px]">轻松支付</h3>
         <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">使用GDPAY，您可以轻松购买GD币，并存入您的GDPAY账户。您可以随时使用GD币支付给受支持的商家。</p>
@@ -85,7 +85,7 @@
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">获得人民币</p>
         </div>
       </div>
-      <Title title="开放支付" :subtitle="['如果您是商家，欢迎您加入EB币生态', '简单几步立即拥有数十万EB币用户']" class="mt-[10.648vw] xl:mt-[130px]" />
+      <Title title="开放支付" :subtitle="['如果您是商家，欢迎您加入GDB币生态', '简单几步立即拥有数十万GDB币用户']" class="mt-[10.648vw] xl:mt-[130px]" />
       <div class="mt-[10.185vw] flex-c-c flex-wrap xl:mt-[40px]">
         <img src="images/solution.png" class="w-[34.722vw] xl:w-[225px]" alt="" />
         <img src="images/situation.png" class="w-[34.722vw] xl:w-[225px]" alt="" />

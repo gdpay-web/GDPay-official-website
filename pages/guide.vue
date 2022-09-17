@@ -19,7 +19,7 @@ export default {
   layout: 'layout-b',
   data() {
     return {
-      list: [{ title: '警惕新型诈骗！！！', date: '2022-09-01', content: 'GD是一种拥有稳定价值的加密货币，GD锚定RMB价值，兑换比例为1:1，即1EB=1RMB，您可以随时在本平台进行...' }]
+      list: [{ title: '警惕新型诈骗！！！', date: '2022-09-01', content: 'GD是一种拥有稳定价值的加密货币，GD锚定RMB价值，兑换比例为1:1，即1GDB=1RMB，您可以随时在本平台进行...' }]
     }
   }
 }
