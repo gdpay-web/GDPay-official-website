@@ -49,7 +49,7 @@ import { onMounted } from 'vue'
 import json from 'static/config.json'
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay8.com/redirect', { width: 150 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay8.com/download', { width: 150 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
