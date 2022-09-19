@@ -33,11 +33,6 @@
       <div class="px-[19.259vw] xl:w-[250px] xl:pt-[35px] xl:px-0 xl:flex xl:flex-col xl:items-end xl:ml-[340px]">
         <canvas id="canvas2" class="hidden w-[150px] xl:block"></canvas>
         <a :href="json.serviceURL" target="_blank"><img src="images/contact-pc.png" class="hidden w-[250px] mt-[33px] xl:block cursor-pointer" alt="" /></a>
-        <ul class="flex mt-[10.648vw] justify-between xl:px-0 xl:mt-[43px] xl:w-[250px]">
-          <li v-for="item in socialMediaList">
-            <img :src="item" class="w-[9.722vw] xl:w-[42px] cursor-pointer" alt="" />
-          </li>
-        </ul>
       </div>
     </div>
   </footer>
@@ -94,8 +89,6 @@ const footerlist = reactive({
     }
   ]
 })
-
-const socialMediaList = ['images/FB.png', 'images/twitter.png', 'images/medium.png', 'images/reddit.png']
 
 const toggle = (active, index) => {
   if (active) {

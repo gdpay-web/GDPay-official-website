@@ -14,7 +14,7 @@
       <DownloadButton class="mt-[100vw] cursor-pointer xl:hidden" type="blue" :download="true" title="IOS下载 (荐)" v-if="isIOS" />
       <DownloadButton class="mt-[2vw] mb-[10vw] cursor-pointer xl:hidden" type="blue" :download="true" title="IOS备用下载" v-if="isIOS" />
     </div>
-    <Footer />
+    <Footer class="hidden xl:block" />
   </div>
 </template>
 
