@@ -6,13 +6,13 @@
           <img src="images/logo-w.png" class="w-[11.204vw] mr-[3.426vw] xl:w-[67px] xl:mr-[15px]" alt="" />
           <p class="text-[5.556vw] xl:text-[30px]">现在，请您下载吧</p>
         </section>
-        <DownloadButton class="mt-[9.167vw] xl:hidden" type="white" />
+        <DownloadButton class="mt-[9.167vw] xl:hidden" type="white" :download="false" />
         <a :href="json.serviceURL" target="_blank"><img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw] xl:hidden" alt="" /></a>
         <ul class="mt-[6.944vw] xl:flex xl:justify-between xl:mt-[70px]">
           <!-- mobile -->
           <li
             v-for="(item, index) in footerlist.data"
-            class="w-[83.333vw] text-center bg-[# 005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden"
+            class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden"
             @click="toggle(item.active, index)"
           >
             {{ item.title }}
@@ -49,7 +49,7 @@ import { onMounted } from 'vue'
 import json from 'static/config.json'
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay8.com/download/redirect', { width: 150 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay8.com/redirect', { width: 150 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })

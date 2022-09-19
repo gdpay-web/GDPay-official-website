@@ -6,12 +6,22 @@
   >
     <img v-if="type === 'blue'" src="images/logo-w.png" class="w-[7.593vw] mr-[2vw] xl:w-[40px] xl:mr-[11px]" alt="" />
     <img v-else src="images/logo-blue.png" class="w-[7.593vw] mr-[2vw]" alt="" />
-    下载APP
+    {{ title || '下载APP' }}
   </button>
 </template>
 <script setup>
 import json from 'static/config.json'
-defineProps(['type'])
+const props = defineProps(['type', 'download', 'title'])
 
-const download = () => (location.href = /iPad|iPhone/i.test(navigator.userAgent) ? json.IOSURL : json.androidURL)
+const download = () => {
+  if (props.download) {
+    if (/iPad|iPhone/i.test(navigator.userAgent)) {
+      location.href = props.title === 'IOS下载 (荐)' ? json.IOSURL : json.IOSURL_BACKUP
+    } else {
+      location.href = json.androidURL
+    }
+  } else {
+    $nuxt.$router.push('/download')
+  }
+}
 </script>

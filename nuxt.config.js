@@ -36,7 +36,14 @@ export default {
   ],
 
   router: {
-    base: ''
+    base: '',
+    extendRoutes(routes, resolve) {
+      routes.forEach((element) => {
+        if (element.name === 'download') {
+          element.alias = '/redirect'
+        }
+      })
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

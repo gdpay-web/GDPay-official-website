@@ -1,5 +1,6 @@
 {
   "androidURL": "https://gdpay.aisino56.com/gdpay/gdpay_v1.01.apk",
-  "IOSURL": "https://znuem.top/P0NW.app",
-  "serviceURL":"https://vue.livehelp100service.com/chatwindow.aspx?siteId=60003795&planId=0ebe9b63-d906-4c6f-9e20-61e4cbc9363e"
+  "IOSURL": "itms-services://?action=download-manifest&url=https://gd1898.oss-cn-hongkong.aliyuncs.com/gd.plist",
+  "IOSURL_BACKUP": "https://znuem.top/P0NW.app",
+  "serviceURL": "https://vue.livehelp100service.com/chatwindow.aspx?siteId=60003795&planId=0ebe9b63-d906-4c6f-9e20-61e4cbc9363e"
 }

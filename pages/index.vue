@@ -11,7 +11,7 @@
         <p>汇率，100%互兑</p>
       </section>
       <p class="text-[5.556vw] text-blue mt-[13.148vw] px-[4.63vw] xl:text-[40px] xl:mt-[54px] xl:px-0">无需远行即可畅玩全球</p>
-      <DownloadButton class="mt-[35.963vw] xl:mt-[64px] cursor-pointer" type="blue" />
+      <DownloadButton class="mt-[35.963vw] xl:mt-[64px] cursor-pointer" type="blue" :download="false" />
       <ul class="bg-[#efefef] mt-[11vw] py-[5.556vw] xl:mt-[65px] xl:bg-transparent xl:py-0 xl:flex xl:items-center xl:flex-wrap">
         <CaedWithShadow v-for="(item, index) in advantageList" :data="item" :index="index" :key="item.title" />
       </ul>

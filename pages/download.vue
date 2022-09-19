@@ -10,10 +10,9 @@
         <canvas id="canvas" class="w-[150px] mt-[50px] inline-block"></canvas>
         <p class="text-[20px] text-blue mt-[20px]">100%互兑 无需远行即可畅玩全球</p>
       </div>
-      <button class="text-white text-[4.444vw] bg-blue gd-rounded h-[14.815vw] w-[90.741vw] mx-[4.63vw] mt-[100vw] flex-c-c mb-[10vw] xl:hidden">
-        <img src="images/logo-w.png" class="w-[7.593vw] mr-[2vw]" alt="" />
-        下载APP
-      </button>
+      <DownloadButton class="mt-[100vw] mb-[10vw] cursor-pointer xl:hidden" type="blue" :download="true" v-if="!isIOS" />
+      <DownloadButton class="mt-[100vw] cursor-pointer xl:hidden" type="blue" :download="true" title="IOS下载 (荐)" v-if="isIOS" />
+      <DownloadButton class="mt-[2vw] mb-[10vw] cursor-pointer xl:hidden" type="blue" :download="true" title="IOS备用下载" v-if="isIOS" />
     </div>
     <Footer />
   </div>
@@ -21,12 +20,16 @@
 
 <script setup>
 import qrcode from 'qrcode'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
+
+const isIOS = ref(false)
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay8.com/download/redirect', { width: 150 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay8.com/redirect', { width: 150 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
+
+  isIOS.value = /iPad|iPhone/i.test(navigator.userAgent)
 })
 </script>
