@@ -8,6 +8,16 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  var url = window.location.href
+  if (url.indexOf('https') < 0) {
+    url = url.replace('http:', 'https:')
+    window.location.replace(url)
+  }
+})
+
 const tabs = [
   {
     src: 'images/users-line-solid.png',
