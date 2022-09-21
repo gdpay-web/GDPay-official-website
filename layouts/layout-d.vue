@@ -1,5 +1,5 @@
 <template>
-  <div class="py-[3.796vw] bg-cover bg-no-repeat xl:bg-else-bg-pc">
+  <div class="py-[3.796vw] bg-cover bg-no-repeat xl:bg-else-bg-pc xl:min-h-full">
     <Header class="hidden xl:block" />
     <BurgerMenu class="xl:hidden" />
     <img src="images/logo.png" class="w-[25.926vw] ml-[2.778vw] xl:hidden" alt="" @click="$router.push('/')" />
