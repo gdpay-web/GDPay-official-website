@@ -9,7 +9,7 @@
   </body>
   <script>
     var url = window.location.href
-    if (url.indexOf('https') < 0) {
+    if (url.indexOf('https') < 0 && url.indexOf('localhost') < 0) {
       url = url.replace('http:', 'https:')
       window.location.replace(url)
     }

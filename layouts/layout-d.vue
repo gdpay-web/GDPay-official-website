@@ -10,5 +10,9 @@
         回上页
       </button>
     </div>
+    <client-only>
+      <ScrollToTop />
+    </client-only>
+
   </div>
 </template>
