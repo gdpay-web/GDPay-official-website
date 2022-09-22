@@ -7,8 +7,8 @@
         若忘记支付密码，请联系客服重置密码。在首页点击左上角的客服图标；或在下方点击“我的”进入个人页面，然后点击左上角的客服图标，打开在线客服链接：
       </p>
       <div class="flex flex-col xl:flex-row">
-        <img src="images/a14.png" class="my-[20px] xl:mx-auto xl:w-[300px]" alt="" />
-        <img src="images/a79.png" class="my-[20px] xl:mx-auto xl:w-[300px]" alt="" />
+        <img src="images/a14.png" class="my-[20px] xl:mx-auto xl:w-[26vw]" alt="" />
+        <img src="images/a79.png" class="my-[20px] xl:mx-auto xl:w-[26vw]" alt="" />
       </div>
     </div>
   </div>

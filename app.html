@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <script></script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+  <script>
+    var url = window.location.href
+    if (url.indexOf('https') < 0) {
+      url = url.replace('http:', 'https:')
+      window.location.replace(url)
+    }
+  </script>
+</html>
