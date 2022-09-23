@@ -6,7 +6,7 @@
     <section class="px-[4.63vw] mt-[15vw] pb-[15vw] xl:w-[1200px] xl:mx-auto xl:mt-[100px]">
       <div class="xl:flex xl:flex-wrap xl:justify-between">
         <div class="mt-[10vw] xl:mt-[60px] xl:w-[48%]" v-for="item in list" :key="item.title">
-          <div class="flex justify-start items-baseline">
+          <div class="flex justify-start items-baseline" :id="item.title">
             <span class="text-[#333333] text-[4.167vw] font-medium xl:text-[23px]">{{ item.title }}</span>
             <span class="text-[#999999] text-[3.333vw] font-medium ml-[2.685vw] xl:text-[18px] xl:ml-[15px]">{{ item.data.length }} 篇文章</span>
           </div>
