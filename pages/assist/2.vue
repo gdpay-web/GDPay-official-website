@@ -1,9 +1,12 @@
 <template>
-  <div class="text-[3.333vw] text-[#666666] px-[4.9vw] xl:w-[1200px] xl:m-auto xl:px-0">
+  <div class="text-[3.333vw] text-[#666666] px-[4.9vw] xl:m-auto xl:px-0 xl:w-[957px] xl:min-h-[63vh]">
     <p class="text-[3.704vw] mt-[4.815vw] font-bold xl:text-[22px]">{{ data.title }}</p>
     <p class="text-[2.407vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">{{ data.date }}</p>
     <div>
-      <p v-for="line in data.content" class="text-[2.963vw] mt-[2vw] text-justify xl:text-[18px]">{{ line }}</p>
+      <p v-for="line in data.content" class="text-[2.963vw] mt-[2vw] text-justify xl:text-[18px]">
+        {{ line[0] }}<br />
+        {{ line[1] }}
+      </p>
     </div>
   </div>
 </template>
@@ -14,15 +17,12 @@ export default {
     return {
       data: {
         title: 'GDPay有什么优势和特色？',
+        date: '2022-09-06',
         content: [
-          '1. 稳定代币',
-          'GDB锚定RMB，1:1兑换，帮助用户实现RMB与数字货币的双向兑换，自由参与数字资产交易与投资。',
-          '2. 资金安全',
-          'GDPay钱包采用金融级别运维风控系统，多维防护，确保资产安全。',
-          '3. 去中心化，不受银行风控影响',
-          'RMB与GDB兑换，将GDB充值至合作平台交易、从平台提至GDPay钱包，有效保护银行卡流水，确保资金链不受银行风控，保护个人银行卡及资产安全。',
-          '4. 全新积分系统',
-          'GDPay钱包新推出积分系统，使用积分可参与幸运抽奖，有机会赢取各种大奖！'
+          ['1. 稳定代币', 'GDB锚定RMB，1:1兑换，帮助用户实现RMB与数字货币的双向兑换，自由参与数字资产交易与投资。'],
+          ['2. 资金安全', 'GDPay钱包采用金融级别运维风控系统，多维防护，确保资产安全。'],
+          ['3. 去中心化，不受银行风控影响', 'RMB与GDB兑换，将GDB充值至合作平台交易、从平台提至GDPay钱包，有效保护银行卡流水，确保资金链不受银行风控，保护个人银行卡及资产安全。'],
+          ['4. 全新积分系统', 'GDPay钱包新推出积分系统，使用积分可参与幸运抽奖，有机会赢取各种大奖！']
         ]
       }
     }
