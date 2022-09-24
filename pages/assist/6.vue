@@ -18,7 +18,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">4. 这样，您就成功地在市场中挂出了卖单。接下来，就请耐心等待其他买家进行购买吧：</p>
       <AssistImage src="images/a25.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">5. 在等待的过程中，您随时可以在首页或是“订单”页面中查看您的卖单状态：</p>
-      <div class="flex flex-col xl:flex-row">
+      <div class="flex flex-row">
         <AssistImage src="images/a26.png" />
         <AssistImage src="images/a27.png" />
       </div>

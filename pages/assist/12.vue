@@ -7,7 +7,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         若忘记支付密码，请联系客服重置密码。在首页点击左上角的客服图标；或在下方点击“我的”进入个人页面，然后点击左上角的客服图标，打开在线客服链接：
       </p>
-      <div class="flex flex-col xl:flex-row">
+      <div class="flex flex-row">
         <AssistImage src="images/a14.png" />
         <AssistImage src="images/a79.png" />
       </div>

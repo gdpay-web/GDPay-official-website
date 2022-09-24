@@ -16,7 +16,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[14px] text-blue bg-[#eee] xl:p-[15px] rounded-[7px]">
         注意：卖单有“可拆分”和“不可拆分”两种。若选择“可拆分”类型的卖单，您可以购买任意小于该单的金额；而若选择“不可拆分”类型的卖单，那么您只能购买该单的完整金额。
       </p>
-      <div class="flex flex-col xl:flex-row">
+      <div class="flex flex-row">
         <AssistImage src="images/a16.png" />
         <AssistImage src="images/a17.png" />
       </div>
