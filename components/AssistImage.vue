@@ -15,7 +15,6 @@ defineProps(['src'])
 
 const isShowDialog = ref(false)
 const handleDialog = () => {
-  console.log(123)
   isShowDialog.value = !isShowDialog.value
 }
 </script>
