@@ -6,11 +6,11 @@
         <div class="burger-bar" :class="{ 'before:bg-white': active }"></div>
       </div>
     </div>
-    <div class="bg-blue h-full top-0 fixed w-full z-10" :class="active ? 'flex-c-c' : 'hidden'">4
+    <div class="bg-blue h-full top-0 fixed w-full z-10" :class="active ? 'flex-c-c' : 'hidden'">
       <ul class="text-white text-[5.093vw] text-center leading-[15vw]">
         <li v-for="item in list" :key="item.title" @click="link(`/assist#${item.title}`)">{{item.title}}</li>
         <li @click="link('/announcement')">最新公告</li>
-        <li @click="link('/agreement')">协议条款</li>
+        <li @click="link('/agreement/service')">服务条款</li>
       </ul>
     </div>
   </div>
