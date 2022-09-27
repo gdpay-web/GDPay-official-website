@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-  layout: 'layout-d',
+  layout: 'layout-e',
   data() {
     return {
       data: {

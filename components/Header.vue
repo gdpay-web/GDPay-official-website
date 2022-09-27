@@ -5,11 +5,7 @@
       <img src="images/menu.png" class="w-[6.944vw] xl:hidden" alt="" @click="visiable = !visiable" />
       <ul class="text-[#666666] text-[21px] hidden xl:flex">
         <li class="cursor-pointer" :class="{ 'text-blue': $route.path === '/' }" @click="goto('/')">GDPAY</li>
-        <li
-          class="ml-[44px] cursor-pointer"
-          :class="{ 'text-blue': $route.path === '/solution' || $route.path === '/situation' || $route.path === '/document' || $route.path === '/source-download' }"
-          @click="goto('/solution')"
-        >
+        <li class="ml-[44px] cursor-pointer" :class="{ 'text-blue': $route.path === '/solution' || $route.path === '/situation' || $route.path === '/document' || $route.path === '/source-download' }" @click="goto('/solution')">
           开放支付
         </li>
         <li class="ml-[44px] cursor-pointer" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li>
@@ -18,7 +14,7 @@
       </ul>
     </header>
     <div class="relative" v-show="visiable">
-      <ul class="absolute right-[4.63vw] w-[31.204vw] h-[50.463vw] bg-white/50 text-center rounded-[0.648vw] text-[2.963vw] text-[#333333] flex flex-col justify-between">
+      <ul class="absolute z-10 right-[4.63vw] w-[31.204vw] h-[50.463vw] bg-white/50 text-center rounded-[0.648vw] text-[2.963vw] text-[#333333] flex flex-col justify-between bg-white">
         <li class="leading-[10vw] under-line" @click="goto('/')">GDPAY</li>
         <li class="leading-[10vw] under-line" @click="goto('/solution')">开放支付</li>
         <li class="leading-[10vw] under-line" @click="goto('/download')">下载APP</li>
