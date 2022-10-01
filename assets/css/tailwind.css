@@ -33,6 +33,10 @@ body,
   @apply border-[0.093vw] border-black/10;
 }
 
+.gd-border-b {
+  @apply border-b-[0.093vw] border-black/10;
+}
+
 .gd-rounded {
   @apply rounded-[1.759vw];
   /* screen xl */
