@@ -67,6 +67,10 @@ export default {
             { title: '交易收取费用吗？', path: '/assist/13' },
             { title: '交易出现问题怎么办？', path: '/assist/14' }
           ]
+        },
+        {
+          title: '搬砖教程',
+          data: [{ title: '搬砖教程', path: '/assist/15' }]
         }
       ]
     }
