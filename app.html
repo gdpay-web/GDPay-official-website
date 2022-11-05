@@ -7,11 +7,13 @@
   <body {{ BODY_ATTRS }}>
     {{ APP }}
   </body>
+  <script src="/config.js"></script>
   <script>
     var url = window.location.href
     if (url.indexOf('https') < 0 && url.indexOf('localhost') < 0) {
       url = url.replace('http:', 'https:')
       window.location.replace(url)
     }
+    window.config = config
   </script>
 </html>

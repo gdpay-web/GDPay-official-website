@@ -17,10 +17,7 @@
       </ul>
       <Title title="关于GD币" :subtitle="['使用GDPAY管理、世界通用的、恒定人民币汇率数字资产']" class="mt-[10.648vw] xl:mt-[130px]" />
       <ul class="xl:flex xl:justify-between xl:mt-[55px]">
-        <li
-          v-for="(item, index) in aboutList"
-          class="w-[90.741vw] gd-rounded mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[390px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0"
-        >
+        <li v-for="(item, index) in aboutList" class="w-[90.741vw] gd-rounded mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[390px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0">
           <div class="w-[34.537vw] xl:w-full">
             <img :src="item.src" class="w-[14.907vw] m-auto xl:w-[80px]" alt="" />
           </div>
@@ -38,23 +35,17 @@
         <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">使用GDPAY，您可以轻松购买GD币，并存入您的GDPAY账户。您可以随时使用GD币支付给受支持的商家。</p>
       </div>
       <div class="xl:flex xl:justify-between xl:mt-[60px]">
-        <div
-          class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[7.5vw] gd-border mt-[7.315vw] tag before:content-['1.'] xl:w-[300px] xl:flex-col xl:text-center xl:mt-0 xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0"
-        >
+        <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[7.5vw] gd-border mt-[7.315vw] tag before:content-['1.'] xl:w-[300px] xl:flex-col xl:text-center xl:mt-0 xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/mobile-alt-solid.png" class="h-[14.259vw] xl:h-[77px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">电子支付购买GD币</p>
         </div>
         <Process title="购买" />
-        <div
-          class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0"
-        >
+        <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/deposit.png" class="h-[11.852vw] xl:h-[70px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">购买GD币存入GDPAY账户</p>
         </div>
         <Process title="支付" />
-        <div
-          class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.833vw] gd-border tag before:content-['3.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0"
-        >
+        <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.833vw] gd-border tag before:content-['3.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/cart-w-logo.png" class="h-[11.852vw] xl:h-[72px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">随时使用GD币轻松支付给商家</p>
         </div>
@@ -64,23 +55,17 @@
         <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">您从商家提取GD币至您的GDPAY账户后，无论何时，您都可以打开您的GDPAY，将GD币出售，并获得人民币。</p>
       </div>
       <div class="xl:flex xl:justify-between xl:mt-[60px]">
-        <div
-          class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.648vw] gd-border mt-[7.315vw] tag before:content-['1.'] xl:w-[300px] xl:flex-col xl:text-center xl:mt-0 xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0"
-        >
+        <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.648vw] gd-border mt-[7.315vw] tag before:content-['1.'] xl:w-[300px] xl:flex-col xl:text-center xl:mt-0 xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/house.png" class="h-[11.852vw] xl:h-[64px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">从商家提取GD币至GDPAY账户</p>
         </div>
         <Process title="购买" />
-        <div
-          class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0"
-        >
+        <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/withdrawal.png" class="h-[11.852vw] xl:h-[70px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">从GDPAY账户卖出GD币</p>
         </div>
         <Process title="支付" />
-        <div
-          class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.278vw] gd-border tag before:content-['3.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0"
-        >
+        <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.278vw] gd-border tag before:content-['3.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/cash.png" class="h-[10.37vw] xl:h-[56px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">获得人民币</p>
         </div>
@@ -93,9 +78,7 @@
         <img src="images/social.png" class="w-[34.722vw] xl:w-[225px]" alt="" />
       </div>
       <p class="mt-[12vw] text-[4.444vw] text-[#666666] text-center xl:text-[24px] xl:mt-[50px]">支持平台</p>
-      <div
-        class="w-[90.741vw] h-[21.296vw] gd-rounded mx-auto flex items-center justify-around gd-border mt-[3.704vw] mb-[20.556vw] xl:border-none xl:justify-center xl:mt-[30px] xl:h-auto xl:w-auto xl:mb-[80px]"
-      >
+      <div class="w-[90.741vw] h-[21.296vw] gd-rounded mx-auto flex items-center justify-around gd-border mt-[3.704vw] mb-[20.556vw] xl:border-none xl:justify-center xl:mt-[30px] xl:h-auto xl:w-auto xl:mb-[80px]">
         <img src="images/android-brands.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
         <img src="images/apple-brands.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
         <img src="images/HTML5.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
