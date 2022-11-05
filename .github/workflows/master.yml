@@ -1,7 +1,7 @@
 name: Deploy via ftp
 on:
   push:
-    branches: ['master']
+    branches: ["master"]
   workflow_dispatch:
 jobs:
   deploy:
@@ -28,6 +28,9 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: './dist/'
-          server-dir: './www.gdpay8.com/'
+          local-dir: "./dist/"
+          server-dir: "./www.gdpay8.com/"
+          exclude: |
+            **/config.js
+            **/config.json
           port: 21212
