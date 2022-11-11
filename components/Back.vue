@@ -12,6 +12,6 @@ const config = reactive({
 })
 
 onMounted(() => {
-  config.isShow = $nuxt.route?.query?.f === 'app'
+  config.isShow = $nuxt.$route?.query?.f !== 'app'
 })
 </script>
