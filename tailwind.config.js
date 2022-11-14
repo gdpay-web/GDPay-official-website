@@ -15,7 +15,7 @@ module.exports = {
         'input-bg': "url('static/images/input.png')",
         tag: "url('static/images/tag.png')",
         next: 'url("static/images/go-to-detail.png")',
-        'pc-home-bg': "url('static/images/bg-pc.png')"
+        'pc-home-bg': "url('static/images/bg-pc.png')",
       },
       boxShadow: {
         gd: '0vw 0vw 2.778vw 0vw rgba(4, 0, 0, 0.1)',
