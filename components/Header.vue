@@ -31,6 +31,7 @@
 </template>
 <script setup>
 import { ref } from 'vue'
+
 defineProps(['type'])
 
 const visiable = ref(false)

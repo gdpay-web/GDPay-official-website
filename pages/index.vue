@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px]">
+  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px]" v-touch:swipe="swipeHandler">
     <Header />
     <div class="xl:w-[1200px] xl:m-auto">
       <section class="mt-[49.63vw] text-[9.259vw] text-blue px-[4.63vw] leading-tight xl:mt-[142px] xl:flex xl:text-[70px] xl:px-0">
-        <p>助您安全</p>
+        <p ref="target">助您安全</p>
         <p class="xl:ml-[30px]">自由支付</p>
       </section>
       <section class="text-[3.333vw] text-[#333333] px-[4.63vw] mt-[1.5vw] xl:text-[23px] xl:flex xl:mt-[5px] xl:px-0">
@@ -90,6 +90,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import { onMounted, onBeforeUnmount } from 'vue'
+import { useElementVisibility } from '@vueuse/core'
+
 const advantageList = [
   {
     src: 'images/face-smile-regular.png',
@@ -130,4 +134,26 @@ const aboutList = [
     content: 'GD币使用区块链技术具有高度匿名的特性，交易无迹可寻。世界范围内已有上千家大型商户支持GD币，全球支付无障碍'
   }
 ]
+
+let timer = ref(null)
+
+const target = ref(null)
+const targetIsVisible = useElementVisibility(target)
+
+onMounted(() => {
+  clearInterval(timer.value)
+  timer.value = setInterval(() => {
+    if (targetIsVisible.value) {
+      $nuxt.$router.push('/brick_to_earn')
+    }
+  }, 5000)
+})
+
+onBeforeUnmount(() => {
+  clearInterval(timer.value)
+})
+
+const swipeHandler = (mouseEvent) => {
+  $nuxt.$router.push('/brick_to_earn')
+}
 </script>
