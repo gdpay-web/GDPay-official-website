@@ -94,6 +94,19 @@ import { ref } from 'vue'
 import { onMounted, onBeforeUnmount } from 'vue'
 import { useElementVisibility } from '@vueuse/core'
 
+const transition = {
+  mode: 'in-out',
+  css: false,
+  enter(el, done) {
+    console.log('enter')
+    done()
+  },
+  leave(el, done) {
+    console.log('leave')
+    done()
+  }
+}
+
 const advantageList = [
   {
     src: 'images/face-smile-regular.png',
@@ -157,3 +170,14 @@ const swipeHandler = (mouseEvent) => {
   $nuxt.$router.push('/brick_to_earn')
 }
 </script>
+
+<style>
+.home-enter-active,
+.home-leave-active {
+  transition: opacity 0.5s;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
+}
+</style>
