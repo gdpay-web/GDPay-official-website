@@ -32,7 +32,7 @@
       <Title title="使用GDPAY" :subtitle="['自由兑换、自由支付GDB币']" class="mt-[10.648vw] xl:mt-[130px]" />
       <div class="px-[4.63vw] mt-[7vw] xl:mt-[60px] xl:px-0">
         <h3 class="text-blue text-[5vw] xl:text-[37px]">轻松支付</h3>
-        <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">使用GDPAY，您可以轻松购买GD币，并存入您的GDPAY账户。您可以随时使用GD币支付给受支持的商家。</p>
+        <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">使用GDPAY，您可以轻松购买GD币，并存入您的GDPAY账户。您可以随时使用GD币支付给受支持的商家。<br />我们在全世界已有1000+合作商家，现在就使用GDPAY畅享缤纷服务吧</p>
       </div>
       <div class="xl:flex xl:justify-between xl:mt-[60px]">
         <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[7.5vw] gd-border mt-[7.315vw] tag before:content-['1.'] xl:w-[300px] xl:flex-col xl:text-center xl:mt-0 xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
@@ -52,19 +52,19 @@
       </div>
       <div class="px-[4.63vw] mt-[7vw] xl:mt-[60px] xl:px-0">
         <h3 class="text-blue text-[5vw] xl:text-[37px]">随时兑现</h3>
-        <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">您从商家提取GD币至您的GDPAY账户后，无论何时，您都可以打开您的GDPAY，将GD币出售，并获得人民币。</p>
+        <p class="text-[#666666] text-[3.333vw] leading-tight mt-[3vw] xl:text-[21px] xl:mt-[10px]">您从商家提取GD币至您的GDPAY账户后,无论何时，您都可以打开您的GDPAY，将GD币出售，并获得人民币。<br />我们提供极速、安全的交易渠道。不仅保障您能快速获取人民币，且非常重视您的银行账户安全，严控每一~笔资金来源</p>
       </div>
       <div class="xl:flex xl:justify-between xl:mt-[60px]">
         <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.648vw] gd-border mt-[7.315vw] tag before:content-['1.'] xl:w-[300px] xl:flex-col xl:text-center xl:mt-0 xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/house.png" class="h-[11.852vw] xl:h-[64px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">从商家提取GD币至GDPAY账户</p>
         </div>
-        <Process title="购买" />
+        <Process title="提取" />
         <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[6.111vw] gd-border tag before:content-['2.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/withdrawal.png" class="h-[11.852vw] xl:h-[70px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">从GDPAY账户卖出GD币</p>
         </div>
-        <Process title="支付" />
+        <Process title="销售" />
         <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex flex-row-reverse items-center justify-between pr-[5.278vw] gd-border tag before:content-['3.'] xl:w-[300px] xl:flex-col xl:text-center xl:pr-0 xl:pt-[35px] xl:justify-start xl:h-[210px] xl:mx-0">
           <img src="images/cash.png" class="h-[10.37vw] xl:h-[56px]" alt="" />
           <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:mt-[30px]">获得人民币</p>
