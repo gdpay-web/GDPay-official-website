@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px]" v-touch:swipe="swipeHandler">
+  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px]">
     <Header />
     <div class="xl:w-[1200px] xl:m-auto">
       <section class="mt-[49.63vw] text-[9.259vw] text-blue px-[4.63vw] leading-tight xl:mt-[142px] xl:flex xl:text-[70px] xl:px-0">
@@ -148,27 +148,7 @@ const aboutList = [
   }
 ]
 
-let timer = ref(null)
-
-const target = ref(null)
-const targetIsVisible = useElementVisibility(target)
-
-onMounted(() => {
-  clearInterval(timer.value)
-  timer.value = setInterval(() => {
-    if (targetIsVisible.value) {
-      $nuxt.$router.push('/brick_to_earn')
-    }
-  }, 5000)
-})
-
-onBeforeUnmount(() => {
-  clearInterval(timer.value)
-})
-
-const swipeHandler = (mouseEvent) => {
-  $nuxt.$router.push('/brick_to_earn')
-}
+onBeforeUnmount(() => {})
 </script>
 
 <style>

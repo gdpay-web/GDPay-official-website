@@ -1,8 +1,10 @@
 <template>
   <div class="pb-[25vw] xl:w-[1200px] xl:mx-auto xl:pb-[100px]">
     <Title title="收款流程" />
-    <img src="images/process.png" class="mt-[5vw] xl:hidden" alt="" />
-    <img src="images/process-pc.png" class="hidden mt-[5vw] xl:block" alt="" />
+    <!-- <img src="images/process.png" class="mt-[5vw] xl:hidden" alt="" /> -->
+    <div class="overflow-x-scroll mt-[5vw] block h-[65vw] w-auto xl:h-auto xl:overflow-hidden">
+      <img src="images/process-pc.png" class="h-[100%] max-w-max" alt="" />
+    </div>
     <div class="flex-c-c mt-[8vw] xl:hidden">
       <img src="images/arrow-left.png" class="w-[4.907vw]" alt="" />
       <p class="text-[#999999] text-[2.778vw] px-[1.4vw]">左右滑动图片查看全部</p>
@@ -23,10 +25,7 @@
           <img src="images/apple-brands.png" class="h-[9.352vw] xl:h-[40px] mx-[10vw] xl:mx-[20px]" alt="" />
           <img src="images/HTML5.png" class="h-[9.352vw] xl:h-[40px]" alt="" />
         </div>
-        <button
-          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto xl:w-[329px] xl:text-[18px] xl:h-[68px] cursor-pointer"
-          @click="$router.push('/source-download')"
-        >
+        <button class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto xl:w-[329px] xl:text-[18px] xl:h-[68px] cursor-pointer" @click="$router.push('/source-download')">
           <img src="images/download-solid-white.png" class="w-[4.815vw] mr-[2vw] xl:w-[26px] xl:mr-[10px]" alt="" />
           资源下载
         </button>
@@ -41,10 +40,7 @@
             </p>
           </div>
         </div>
-        <button
-          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto mt-[4vw] xl:w-[329px] xl:text-[18px] xl:h-[68px] xl:mt-[50px] cursor-pointer"
-          @click="$router.push('/document')"
-        >
+        <button class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto mt-[4vw] xl:w-[329px] xl:text-[18px] xl:h-[68px] xl:mt-[50px] cursor-pointer" @click="$router.push('/document')">
           <img src="images/file-code-solid-white.png" class="w-[4.815vw] mr-[2vw] xl:w-[26px] xl:mr-[10px]" alt="" />
           开发文档
         </button>
@@ -61,44 +57,32 @@
     </div>
     <Title title="合作流程" class="my-[8vw]" />
     <div class="xl:flex xl:justify-between">
-      <div
-        class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['1.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end"
-      >
+      <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['1.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end">
         <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:w-[24px] xl:pb-[20px] xl:mt-[15px]">提交申请</p>
         <img src="images/paste-regular.png" class="h-[10.37vw] xl:h-[51px]" alt="" />
       </div>
       <Process />
-      <div
-        class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['2.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end"
-      >
+      <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['2.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end">
         <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:w-[24px] xl:pb-[20px] xl:mt-[15px]">等待商务关系</p>
         <img src="images/clock-regular.png" class="h-[10.37vw] xl:h-[51px]" alt="" />
       </div>
       <Process />
-      <div
-        class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['3.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end"
-      >
+      <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['3.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end">
         <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:w-[24px] xl:pb-[20px] xl:mt-[15px]">签约合同</p>
         <img src="images/file-signature-solid.png" class="h-[10.37vw] xl:h-[51px]" alt="" />
       </div>
       <Process />
-      <div
-        class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['4.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end"
-      >
+      <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['4.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end">
         <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:w-[24px] xl:pb-[20px] xl:mt-[15px]">交付物</p>
         <img src="images/box-archive-solid.png" class="h-[10.37vw] xl:h-[51px]" alt="" />
       </div>
       <Process />
-      <div
-        class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['5.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end"
-      >
+      <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['5.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end">
         <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:w-[24px] xl:pb-[20px] xl:mt-[15px]">技术支持</p>
         <img src="images/laptop-code-solid.png" class="h-[10.37vw] xl:h-[51px]" alt="" />
       </div>
       <Process />
-      <div
-        class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['6.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end"
-      >
+      <div class="w-[90.741vw] h-[25.37vw] gd-rounded mx-auto flex items-center justify-between pr-[5.278vw] gd-border tag before:content-['6.'] xl:flex-col-reverse xl:w-[150px] xl:pt-[60px] xl:items-center xl:p-0 xl:mx-0 xl:justify-end">
         <p class="ml-[9.444vw] text-[4.444vw] text-[#333333] xl:text-[24px] xl:ml-0 xl:w-[24px] xl:pb-[20px] xl:mt-[15px]">完成上线</p>
         <img src="images/circle-check-regular.png" class="h-[10.37vw] xl:h-[51px]" alt="" />
       </div>

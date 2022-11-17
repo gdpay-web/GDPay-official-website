@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:pt-[79px]" v-touch:swipe="swipeHandler">
+  <div class="xl:pt-[79px]">
     <div class="fixed w-[100vw]">
       <Header type="dark" />
     </div>
@@ -20,20 +20,7 @@
 import { ref } from 'vue'
 import { onMounted, onBeforeUnmount } from 'vue'
 
-let timer = ref(null)
+onMounted(() => {})
 
-onMounted(() => {
-  clearInterval(timer.value)
-  timer.value = setInterval(() => {
-    $nuxt.$router.push('/')
-  }, 5000)
-})
-
-onBeforeUnmount(() => {
-  clearInterval(timer.value)
-})
-
-const swipeHandler = (e) => {
-  $nuxt.$router.push('/')
-}
+onBeforeUnmount(() => {})
 </script>

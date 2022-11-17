@@ -18,13 +18,13 @@
       </ul>
     </header>
     <div class="relative" v-show="visiable">
-      <ul class="absolute z-10 right-[4.63vw] w-[31.204vw] h-[50.463vw] bg-white/50 text-center rounded-[0.648vw] text-[2.963vw] text-[#333333] flex flex-col justify-between bg-white">
+      <ul class="absolute z-10 right-[4.63vw] w-[31.204vw] m-h-[50.463vw] bg-white/50 text-center rounded-[0.648vw] text-[2.963vw] text-[#333333] flex flex-col justify-between bg-white">
         <li class="leading-[10vw] under-line" @click="goto('/')">GDPAY</li>
         <li class="leading-[10vw] under-line" @click="goto('/brick_to_earn')">搬砖赚钱</li>
         <li class="leading-[10vw] under-line" @click="goto('/solution')">开放支付</li>
         <li class="leading-[10vw] under-line" @click="goto('/download')">下载APP</li>
         <li class="leading-[10vw] under-line" @click="goto('/announcement')">最新公告</li>
-        <li class="leading-[10vw]" @click="goto('/assist')">帮助中心</li>
+        <li class="leading-[10vw] under-line" @click="goto('/assist')">帮助中心</li>
       </ul>
     </div>
   </div>
