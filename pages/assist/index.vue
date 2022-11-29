@@ -8,7 +8,7 @@
         <span class="text-[#333333] text-[4.167vw] font-medium xl:text-[23px]">{{ item.title }}</span>
         <span class="text-[#999999] text-[3.333vw] font-medium ml-[2.685vw] xl:text-[18px] xl:ml-[15px]">{{ item.data.length }} 篇文章</span>
       </div>
-      <hr />
+      <hr class="border-t-[1px] border-[#ccc]" />
       <ul>
         <li v-for="item2 in item.data" class="text-[3.333vw] mt-[6vw] flex items-center leading-tight pl-[1.481vw] xl:pl-[10px] xl:text-[18px] xl:mt-[30px] cursor-pointer" @click="$router.push(item2.path)">
           <img src="images/A-blue.png" class="w-[1.204vw] h-[2.13vw] mr-[1.759vw] xl:w-[6px] xl:h-[11px] xl:mr-[5px]" alt="" />

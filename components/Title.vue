@@ -7,7 +7,7 @@
       </h3>
       <img src="images/title-decoration.png" class="rotate-180 w-[22.13vw] xl:w-[167px]" alt="" />
     </div>
-    <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25.2px]" :class="{ 'mt-[6.204vw] xl:mt-[47px]': !index }" v-for="(item, index) in subtitle">
+    <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25.2px] font-medium" :class="{ 'mt-[6.204vw] xl:mt-[47px]': !index }" v-for="(item, index) in subtitle">
       {{ item }}
     </p>
   </div>

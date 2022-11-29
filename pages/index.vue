@@ -1,27 +1,43 @@
 <template>
-  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px]">
+  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px] bg-[#F5F5F5]">
     <Header />
     <div class="xl:w-[1200px] xl:m-auto">
-      <section class="mt-[49.63vw] text-[9.259vw] text-blue px-[4.63vw] leading-tight xl:mt-[142px] xl:flex xl:text-[70px] xl:px-0">
-        <p ref="target">助您安全</p>
-        <p class="xl:ml-[30px]">自由支付</p>
-      </section>
-      <section class="text-[3.333vw] text-[#333333] px-[4.63vw] mt-[1.5vw] xl:text-[23px] xl:flex xl:mt-[5px] xl:px-0">
-        <p>GD币 - 世界通用数字资产恒定人民币</p>
-        <p>汇率，100%互兑</p>
-      </section>
-      <p class="text-[5.556vw] text-blue mt-[13.148vw] px-[4.63vw] xl:text-[40px] xl:mt-[54px] xl:px-0">无需远行即可畅玩全球</p>
-      <DownloadButton class="mt-[35.963vw] xl:mt-[64px] cursor-pointer" type="blue" :download="false" />
-      <ul class="bg-[#efefef] mt-[11vw] py-[5.556vw] xl:mt-[65px] xl:bg-transparent xl:py-0 xl:flex xl:items-center xl:flex-wrap">
+      <div class="flex mt-[19.63vw] xl:mt-[142px]">
+        <div class="xl:w-[226px] xl:h-[250px] bg-white shadow-2xl rounded-[15px] xl:mr-[25px] xl:flex justify-center flex-wrap hidden">
+          <canvas id="canvas" class="w-[200px] inline-block rounded-[15px]"></canvas>
+          <div class="text-[18px] font-medium text-[#999] mt-[-30px]">
+            扫描即可下载GDPAY
+          </div>
+        </div>
+        <div>
+          <section class="text-[9.259vw] text-blue px-[4.63vw] leading-tight xl:flex xl:text-[70px] xl:px-0 font-medium">
+            <p ref="target">助您安全</p>
+            <p class="xl:ml-[30px]">自由支付</p>
+          </section>
+          <section class="text-[3.333vw] text-[#333333] px-[4.63vw] mt-[1.5vw] xl:text-[23px] xl:flex xl:mt-[5px] xl:px-0">
+            <p>GD币 - 世界通用数字资产恒定人民币</p>
+            <p>汇率，100%互兑</p>
+          </section>
+          <p class="text-[5.556vw] text-blue mt-[10.148vw] px-[4.63vw] xl:text-[40px] xl:mt-[25px] xl:px-0 font-medium">无需远行即可畅玩全球</p>
+        </div>
+      </div>
+      <div class="w-[41.666vw] h-[46.2vw] bg-white shadow-xl rounded-[10px] xl:mr-[25px] flex justify-center flex-wrap mx-auto mt-[14.8vw] xl:mt-0 border-[1px] border-[#ccc] xl:hidden">
+        <canvas id="canvas-m" class="w-[200px] inline-block rounded-[15px]"></canvas>
+        <div class="text-[3.33vw] xl:text-[18px] font-normal xl:font-medium text-[#999] mt-[-10px]">
+          扫描即可下载GDPAY
+        </div>
+      </div>
+      <DownloadButton class="mt-[5.963vw] xl:mt-[70px] cursor-pointer" type="blue" :download="false" />
+      <ul class="bg-[#efefef] mx-[1.85vw] xl:mx-0 mt-[11vw] py-[5.556vw] xl:mt-[65px] xl:bg-transparent items-start xl:py-0 flex xl:items-center flex-wrap">
         <CaedWithShadow v-for="(item, index) in advantageList" :data="item" :index="index" :key="item.title" />
       </ul>
       <Title title="关于GD币" :subtitle="['使用GDPAY管理、世界通用的、恒定人民币汇率数字资产']" class="mt-[10.648vw] xl:mt-[130px]" />
       <ul class="xl:flex xl:justify-between xl:mt-[55px]">
-        <li v-for="(item, index) in aboutList" class="w-[90.741vw] gd-rounded mx-auto flex items-center pt-[8.611vw] pb-[9.259vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[390px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0">
-          <div class="w-[34.537vw] xl:w-full">
+        <li v-for="(item, index) in aboutList" class="w-[90.741vw] gd-rounded mx-auto flex items-center py-[3.7vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[390px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0">
+          <div class="w-[26vw] xl:w-full">
             <img :src="item.src" class="w-[14.907vw] m-auto xl:w-[80px]" alt="" />
           </div>
-          <div class="w-[53.148vw] xl:w-full xl:p-[30px] xl:text-left">
+          <div class="w-[64.7vw] xl:w-full pr-[5.5vw] xl:p-[30px] xl:text-left">
             <h3 class="text-blue text-[5vw] xl:text-[27px]">{{ item.title }}</h3>
             <p class="text-[#666666] text-[3.333vw] leading-tight text-justify xl:text-[18px] xl:mt-[15px]">
               {{ item.content }}
@@ -71,18 +87,18 @@
         </div>
       </div>
       <Title title="开放支付" :subtitle="['如果您是商家，欢迎您加入GDB币生态', '简单几步立即拥有数十万GDB币用户']" class="mt-[10.648vw] xl:mt-[130px]" />
-      <div class="mt-[10.185vw] flex-c-c flex-wrap xl:mt-[40px]">
-        <img src="images/solution.png" class="w-[34.722vw] xl:w-[225px]" alt="" />
-        <img src="images/situation.png" class="w-[34.722vw] xl:w-[225px]" alt="" />
-        <img src="images/document.png" class="w-[34.722vw] xl:w-[225px]" alt="" />
-        <img src="images/social.png" class="w-[34.722vw] xl:w-[225px]" alt="" />
+      <div class="mt-[5.185vw] w-[95vw] mx-auto xl:w-[100%] flex-c-c flex-wrap xl:mt-[40px]">
+        <img src="images/solution.png" class="w-[25%] xl:w-[225px] xl:mx-[20px] " alt="" />
+        <img src="images/situation.png" class="w-[25%] xl:w-[225px] xl:mx-[20px] " alt="" />
+        <img src="images/document.png" class="w-[25%] xl:w-[225px] xl:mx-[20px] " alt="" />
+        <img src="images/social.png" class="w-[25%] xl:w-[225px] xl:mx-[20px] " alt="" />
       </div>
       <p class="mt-[12vw] text-[4.444vw] text-[#666666] text-center xl:text-[24px] xl:mt-[50px]">支持平台</p>
-      <div class="w-[90.741vw] h-[21.296vw] gd-rounded mx-auto flex items-center justify-around gd-border mt-[3.704vw] mb-[20.556vw] xl:border-none xl:justify-center xl:mt-[30px] xl:h-auto xl:w-auto xl:mb-[80px]">
-        <img src="images/android-brands.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
-        <img src="images/apple-brands.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
-        <img src="images/HTML5.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
-        <img src="images/EDGE.png" class="h-[11.852vw] xl:h-[56px] xl:mx-[50px]" alt="" />
+      <div class="w-[65.741vw] h-[15.296vw] xl:gd-rounded mx-auto flex items-center justify-around mt-[0] mb-[10.556vw] xl:border-none xl:justify-center xl:mt-[30px] xl:h-auto xl:w-auto xl:mb-[80px]">
+        <img src="images/android-brands.png" class="h-[7.4vw] xl:h-[56px] xl:mx-[50px]" alt="" />
+        <img src="images/apple-brands.png" class="h-[7.4vw] xl:h-[56px] xl:mx-[50px]" alt="" />
+        <img src="images/HTML5.png" class="h-[7.4vw] xl:h-[56px] xl:mx-[50px]" alt="" />
+        <img src="images/EDGE.png" class="h-[7.4vw] xl:h-[56px] xl:mx-[50px]" alt="" />
       </div>
     </div>
     <Footer />
@@ -90,8 +106,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { onMounted, onBeforeUnmount } from 'vue'
+import qrcode from 'qrcode'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useElementVisibility } from '@vueuse/core'
 
 const transition = {
@@ -147,6 +163,22 @@ const aboutList = [
     content: 'GD币使用区块链技术具有高度匿名的特性，交易无迹可寻。世界范围内已有上千家大型商户支持GD币，全球支付无障碍'
   }
 ]
+
+const isIOS = ref(false)
+
+onMounted(() => {
+  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay8.com/download', { width: 226 }, function (error) {
+    if (error) console.error(error)
+    console.log('success!')
+  })
+
+  qrcode.toCanvas(document.getElementById('canvas-m'), 'https://www.gdpay8.com/download', { width: '100%' }, function (error) {
+    if (error) console.error(error)
+    console.log('success!')
+  })
+
+  isIOS.value = /iPad|iPhone/i.test(navigator.userAgent)
+})
 
 onBeforeUnmount(() => {})
 </script>

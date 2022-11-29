@@ -1,5 +1,5 @@
 <template>
-  <!-- 用於公告中心 幫助中心 -->
+  <!-- 用於幫助中心 -->
   <div class="bg-else-bg bg-contain bg-no-repeat pb-[21.667vw] text-[#666666] xl:bg-else-bg-pc xl:pt-[200px] xl:min-h-full">
     <Header class="block xl:pb-0 pb-[12.667vw]" />
     <img src="images/logo.png" class="w-[36.204vw] m-auto xl:w-[260px]" alt="" @click="$router.push('/')" />
