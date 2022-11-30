@@ -1,8 +1,41 @@
 <template>
-  <div class="bg-home-bg bg-contain bg-no-repeat xl:bg-pc-home-bg xl:pt-[79px] bg-[#F5F5F5]">
+  <div class="bg xl:pt-[79px] bg-[#fff] overflow-x-hidden">
     <Header />
+    <Transition>
+      <div v-if="isShowDialog" class="full-img fixed bg-black w-[100vw] h-[100vh] z-10 top-0 left-0 flex items-center content-center" @click="handleDialog">
+        <video autoplay class="mx-auto xl:w-[80vw] w-[90vw] shadow-lg mt-[20px] xl:mt-[40px]" controls>
+          <source src="videos/assist_21.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </Transition>
+
+    <div class="slide">
+      <TransitionGroup>
+        <div v-if="slide_index === 0" class="slide-item absolute" @click="handleDialog" key="home-slide-1">
+          <img src="/images/slide_1.png" alt="" class="w-[100vw] hidden xl:block">
+          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+        </div>
+        <div v-if="slide_index === 1" class="slide-item absolute" @click="$router.push('/assist/5')" key="home-slide-2">
+          <img src="/images/slide_2.png" alt="" class="w-[100vw] hidden xl:block">
+          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+        </div>
+        <div v-if="slide_index === 2" class="slide-item absolute" @click="$router.push('/assist/6')" key="home-slide-3">
+          <img src="/images/slide_3.png" alt="" class="w-[100vw] hidden xl:block">
+          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+        </div>
+        <div v-if="slide_index === 3" class="slide-item absolute" @click="$router.push('/assist/15')" key="home-slide-4">
+          <img src="/images/slide_4.png" alt="" class="w-[100vw] hidden xl:block">
+          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+        </div>
+        <div v-if="slide_index === 4" class="slide-item absolute" @click="$router.push('/assist/21')" key="home-slide-5">
+          <img src="/images/slide_5.png" alt="" class="w-[100vw] hidden xl:block">
+          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+        </div>
+      </TransitionGroup>
+    </div>
     <div class="xl:w-[1200px] xl:m-auto">
-      <div class="flex mt-[19.63vw] xl:mt-[142px]">
+      <!-- <div class="flex mt-[19.63vw] xl:mt-[142px]">
         <div class="xl:w-[226px] xl:h-[250px] bg-white shadow-2xl rounded-[15px] xl:mr-[25px] xl:flex justify-center flex-wrap hidden">
           <canvas id="canvas" class="w-[200px] inline-block rounded-[15px]"></canvas>
           <div class="text-[18px] font-medium text-[#999] mt-[-30px]">
@@ -20,19 +53,19 @@
           </section>
           <p class="text-[5.556vw] text-blue mt-[10.148vw] px-[4.63vw] xl:text-[40px] xl:mt-[25px] xl:px-0 font-medium">无需远行即可畅玩全球</p>
         </div>
-      </div>
-      <div class="w-[41.666vw] h-[46.2vw] bg-white shadow-xl rounded-[10px] xl:mr-[25px] flex justify-center flex-wrap mx-auto mt-[14.8vw] xl:mt-0 border-[1px] border-[#ccc] xl:hidden">
+      </div> -->
+      <!-- <div class="w-[41.666vw] h-[46.2vw] bg-white shadow-xl rounded-[10px] xl:mr-[25px] flex justify-center flex-wrap mx-auto mt-[14.8vw] xl:mt-0 border-[1px] border-[#ccc] xl:hidden">
         <canvas id="canvas-m" class="w-[200px] inline-block rounded-[15px]"></canvas>
         <div class="text-[3.33vw] xl:text-[18px] font-normal xl:font-medium text-[#999] mt-[-10px]">
           扫描即可下载GDPAY
         </div>
-      </div>
-      <DownloadButton class="mt-[5.963vw] xl:mt-[70px] cursor-pointer" type="blue" :download="false" />
+      </div> -->
+      <!-- <DownloadButton class="mt-[5.963vw] xl:mt-[70px] cursor-pointer" type="blue" :download="false" /> -->
       <ul class="bg-[#efefef] mx-[1.85vw] xl:mx-0 mt-[11vw] py-[5.556vw] xl:mt-[65px] xl:bg-transparent items-start xl:py-0 flex xl:items-center flex-wrap">
         <CaedWithShadow v-for="(item, index) in advantageList" :data="item" :index="index" :key="item.title" />
       </ul>
       <Title title="关于GD币" :subtitle="['使用GDPAY管理、世界通用的、恒定人民币汇率数字资产']" class="mt-[10.648vw] xl:mt-[130px]" />
-      <ul class="xl:flex xl:justify-between xl:mt-[55px]">
+      <ul class="xl:flex xl:justify-between xl:mt-[105px] xl:z-1 relative">
         <li v-for="(item, index) in aboutList" class="w-[90.741vw] gd-rounded mx-auto flex items-center py-[3.7vw] gd-border mt-[4.63vw] first:mt-[7.315vw] xl:inline-block xl:text-center xl:w-[390px] xl:mt-0 xl:first:mt-0 xl:pt-[33px] xl:pb-0">
           <div class="w-[26vw] xl:w-full">
             <img :src="item.src" class="w-[14.907vw] m-auto xl:w-[80px]" alt="" />
@@ -123,6 +156,11 @@ const transition = {
   }
 }
 
+const isShowDialog = ref(false)
+const handleDialog = () => {
+  isShowDialog.value = !isShowDialog.value
+}
+
 const advantageList = [
   {
     src: 'images/face-smile-regular.png',
@@ -166,6 +204,8 @@ const aboutList = [
 
 const isIOS = ref(false)
 
+const slide_index = ref(0)
+
 onMounted(() => {
   qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay8.com/download', { width: 226 }, function (error) {
     if (error) console.error(error)
@@ -181,15 +221,27 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {})
+
+setInterval(() => {
+  slide_index.value = slide_index.value === 4 ? (slide_index.value = 0) : slide_index.value + 1
+}, 5000)
+
+const onSwiper = (swiper) => {
+  console.log(swiper)
+}
+const onSlideChange = () => {
+  console.log('slide change')
+}
 </script>
 
 <style>
-.home-enter-active,
-.home-leave-active {
-  transition: opacity 0.5s;
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 1s ease;
 }
-.home-enter,
-.home-leave-active {
+
+.v-enter,
+.v-leave-to {
   opacity: 0;
 }
 </style>

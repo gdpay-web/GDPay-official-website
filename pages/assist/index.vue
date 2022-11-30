@@ -71,6 +71,17 @@ export default {
         {
           title: '搬砖教程',
           data: [{ title: '搬砖教程', path: '/assist/15' }]
+        },
+        {
+          title: 'USDT相关',
+          data: [
+            { title: '充币多久到账', path: '/assist/16' },
+            { title: '充币没有到账怎么处理', path: '/assist/17' },
+            { title: '充币需要手续费吗', path: '/assist/18' },
+            { title: '什么是公链协议?什么是TRC20?', path: '/assist/19' },
+            { title: '如何购买USDT?', path: '/assist/20' },
+            { title: '什么是USDT?', path: '/assist/21' }
+          ]
         }
       ]
     }
