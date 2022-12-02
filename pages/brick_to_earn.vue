@@ -1,6 +1,6 @@
 <template>
   <div class="xl:pt-[79px]">
-    <div class="fixed w-[100vw]">
+    <div class="absolute xl:fixed w-[100vw]">
       <Header type="dark" />
     </div>
     <img src="/images/bg-brick-pc.png" alt="" class="w-[100vw] hidden xl:block">
