@@ -10,27 +10,27 @@
       </div>
     </Transition>
 
-    <div class="slide">
+    <div class="slide xl:h-[41vw] h-[170vw]">
       <TransitionGroup>
         <div v-if="slide_index === 0" class="slide-item absolute" @click="handleDialog" key="home-slide-1">
           <img src="/images/slide_1.png" alt="" class="w-[100vw] hidden xl:block">
-          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+          <img src="/images/slide_1_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
         <div v-if="slide_index === 1" class="slide-item absolute" @click="$router.push('/assist/5')" key="home-slide-2">
           <img src="/images/slide_2.png" alt="" class="w-[100vw] hidden xl:block">
-          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+          <img src="/images/slide_2_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
         <div v-if="slide_index === 2" class="slide-item absolute" @click="$router.push('/assist/6')" key="home-slide-3">
           <img src="/images/slide_3.png" alt="" class="w-[100vw] hidden xl:block">
-          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+          <img src="/images/slide_3_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
         <div v-if="slide_index === 3" class="slide-item absolute" @click="$router.push('/assist/15')" key="home-slide-4">
           <img src="/images/slide_4.png" alt="" class="w-[100vw] hidden xl:block">
-          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+          <img src="/images/slide_4_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
         <div v-if="slide_index === 4" class="slide-item absolute" @click="$router.push('/assist/21')" key="home-slide-5">
           <img src="/images/slide_5.png" alt="" class="w-[100vw] hidden xl:block">
-          <img src="/images/bg-brick.png" alt="" class="w-[100vw] block xl:hidden">
+          <img src="/images/slide_5_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
       </TransitionGroup>
     </div>
