@@ -9,10 +9,18 @@
         </video>
       </div>
     </Transition>
+    <Transition>
+      <div v-if="isShowDialogPromote" class="full-img fixed bg-black w-[100vw] h-[100vh] z-10 top-0 left-0 flex items-center content-center" @click="handleDialogPromote">
+        <video autoplay class="mx-auto xl:w-[80vw] w-[90vw] shadow-lg mt-[20px] xl:mt-[40px]" controls>
+          <source src="videos/GD Pay_x264.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </Transition>
 
     <div class="slide xl:h-[41vw] h-[170vw]">
       <TransitionGroup>
-        <div v-if="slide_index === 0" class="slide-item absolute" @click="handleDialog" key="home-slide-1">
+        <div v-if="slide_index === 0" class="slide-item absolute" @click="handleDialogPromote" key="home-slide-1">
           <img src="/images/slide_1.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_1_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
@@ -28,7 +36,7 @@
           <img src="/images/slide_4.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_4_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
-        <div v-if="slide_index === 4" class="slide-item absolute" @click="$router.push('/assist/21')" key="home-slide-5">
+        <div v-if="slide_index === 4" class="slide-item absolute" @click="handleDialog" key="home-slide-5">
           <img src="/images/slide_5.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_5_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
@@ -159,6 +167,11 @@ const transition = {
 const isShowDialog = ref(false)
 const handleDialog = () => {
   isShowDialog.value = !isShowDialog.value
+}
+
+const isShowDialogPromote = ref(false)
+const handleDialogPromote = () => {
+  isShowDialogPromote.value = !isShowDialogPromote.value
 }
 
 const advantageList = [
