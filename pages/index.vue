@@ -36,7 +36,7 @@
           <img src="/images/slide_4.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_4_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
-        <div v-if="slide_index === 4" class="slide-item absolute" @click="handleDialog" key="home-slide-5">
+        <div v-if="slide_index === 4" class="slide-item absolute" @click="$router.push('/assist/21')" key="home-slide-5">
           <img src="/images/slide_5.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_5_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
