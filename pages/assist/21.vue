@@ -18,7 +18,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         USDT可以被传输、存储、使用，就像BTC、ETH
         或任何其他加密货币一样，用户可以通过主流交易所
-        或No钱包来进行交易和存储。
+        或GDPay钱包来进行交易和存储。
       </p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         USDT用起来很简单。在全球各大主流交易平台;

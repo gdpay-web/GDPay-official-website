@@ -9,7 +9,7 @@
         读取、发送且获得有效确认的共识，去中心化程度很高。</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px] font-bold text-black">什么是TRC20?</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">TRC20其实就是一种基于波场TRON的网络协议，通
-        过TRC20发送USDT具有速度快、费用低的优点。目前No钱包的USDT已支持TRC20网络协议</p>
+        过TRC20发送USDT具有速度快、费用低的优点。目前GDPay钱包的USDT已支持TRC20网络协议</p>
     </div>
   </div>
 </template>

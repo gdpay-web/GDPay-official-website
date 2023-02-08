@@ -9,7 +9,7 @@
         无法干预区块确认的，所以相应的确认时间是不固定
         的，每个币种所需的确认数不-样，需要以区块的确
         认为准。</p>
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">No钱包的USDT充币支持TRC20网络，一般10秒
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">GDPay钱包的USDT充币支持TRC20网络，一般10秒
         左右即可到账</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px] font-bold text-black">如何查询充币是否到账?</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">如果您充值的是TRC20网络的USDT，可以直接通
