@@ -86,8 +86,8 @@ const footerlist = reactive({
       title: '帮助中心',
       active: false,
       list: [
-        { label: '新手指南', path: '/guide' },
-        { label: '常见交易问题', path: '/question' }
+        { label: '新手指南', path: '/assist/1' },
+        { label: '常见交易问题', path: '/assist' }
       ]
     }
   ]
