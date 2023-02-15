@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       list: [
+        { title: '防骗公告', date: '2023-02-15', content: '近期有很多不法份子冒充GDPAY商务邀请进行开户，骗取首充奖励。未避免您的损失请各位合作伙伴在开户前，先核对真实身份', path: '/announcement/2' },
         {
           title: 'GD使用说明',
           date: '2022-09-07',

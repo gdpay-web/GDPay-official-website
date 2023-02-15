@@ -20,23 +20,27 @@
 
     <div class="slide xl:h-[41vw] h-[170vw]">
       <TransitionGroup>
-        <div v-if="slide_index === 0" class="slide-item absolute" @click="handleDialogPromote" key="home-slide-1">
+        <div v-if="slide_index === 0" class="slide-item absolute" @click="$router.push('/announcement/2')" key="home-slide-6">
+          <img src="/images/slide_6.png" alt="" class="w-[100vw] hidden xl:block">
+          <img src="/images/slide_6_m.png" alt="" class="w-[100vw] block xl:hidden">
+        </div>
+        <div v-if="slide_index === 1" class="slide-item absolute" @click="handleDialogPromote" key="home-slide-1">
           <img src="/images/slide_1.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_1_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
-        <div v-if="slide_index === 1" class="slide-item absolute" @click="$router.push('/assist/5')" key="home-slide-2">
+        <div v-if="slide_index === 2" class="slide-item absolute" @click="$router.push('/assist/5')" key="home-slide-2">
           <img src="/images/slide_2.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_2_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
-        <div v-if="slide_index === 2" class="slide-item absolute" @click="$router.push('/assist/6')" key="home-slide-3">
+        <div v-if="slide_index === 3" class="slide-item absolute" @click="$router.push('/assist/6')" key="home-slide-3">
           <img src="/images/slide_3.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_3_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
-        <div v-if="slide_index === 3" class="slide-item absolute" @click="$router.push('/assist/15')" key="home-slide-4">
+        <div v-if="slide_index === 4" class="slide-item absolute" @click="$router.push('/assist/15')" key="home-slide-4">
           <img src="/images/slide_4.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_4_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
-        <div v-if="slide_index === 4" class="slide-item absolute" @click="$router.push('/assist/21')" key="home-slide-5">
+        <div v-if="slide_index === 5" class="slide-item absolute" @click="$router.push('/assist/21')" key="home-slide-5">
           <img src="/images/slide_5.png" alt="" class="w-[100vw] hidden xl:block">
           <img src="/images/slide_5_m.png" alt="" class="w-[100vw] block xl:hidden">
         </div>
@@ -236,7 +240,7 @@ onMounted(() => {
 onBeforeUnmount(() => {})
 
 setInterval(() => {
-  slide_index.value = slide_index.value === 4 ? (slide_index.value = 0) : slide_index.value + 1
+  slide_index.value = slide_index.value === 5 ? (slide_index.value = 0) : slide_index.value + 1
 }, 5000)
 
 const onSwiper = (swiper) => {
