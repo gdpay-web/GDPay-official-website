@@ -224,12 +224,12 @@ const isIOS = ref(false)
 const slide_index = ref(0)
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay8.com/download', { width: 226 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay3.com/download', { width: 226 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
 
-  qrcode.toCanvas(document.getElementById('canvas-m'), 'https://www.gdpay8.com/download', { width: '100%' }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas-m'), 'https://www.gdpay3.com/download', { width: '100%' }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })

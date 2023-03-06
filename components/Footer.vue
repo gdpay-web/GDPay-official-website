@@ -45,7 +45,7 @@ const setting = reactive({
 })
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay8.com/download', { width: 150 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.gdpay3.com/download', { width: 150 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
