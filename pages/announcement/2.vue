@@ -7,7 +7,7 @@
         近期有很多不法份子冒充GDPAY商务邀请进行开户，骗取首充奖励。未避免您的损失请各位合作伙伴在开户前，先核对真实身份<br />
         GDpay唯一官方网站：
         <a class="cursor-pointer text-blue" href="https://www.gdpay.cc/" target="_blank">https://www.gdpay.cc/</a> <br />
-        GDPay唯一官方商务飞机：@GDPAYJAMES<br />
+        GDPay唯一官方商务飞机：@GDPAYRICK<br />
         <QrcodeImage src="images/anno2.png" />
       </p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">另外 GDPay官方人员不会以任何形式向您发送转款链接<br />
