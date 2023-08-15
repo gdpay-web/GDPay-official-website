@@ -1,7 +1,6 @@
 # GDPay-official-website
 
 ## Build Setup
-test
 ```bash
 # install dependencies
 $ yarn install
