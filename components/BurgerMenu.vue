@@ -8,7 +8,7 @@
     </div>
     <div class="bg-blue h-full top-0 fixed w-full z-10" :class="active ? 'flex-c-c' : 'hidden'">
       <ul class="text-white text-[5.093vw] text-center leading-[15vw]">
-        <li v-for="item in list" :key="item.title" @click="link(`/assist#${item.title}`)">{{item.title}}</li>
+        <li v-for="item in list" :key="item.title" @click="link(`/assist#${item.title}`)">{{ item.title }}</li>
       </ul>
     </div>
   </div>
