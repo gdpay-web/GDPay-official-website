@@ -93,46 +93,46 @@ export default {
         {
           title: '产品简介',
           data: [
-            { title: '什么是GDPay和GDB？', path: `/assist/1?from=${$route.query.from}` },
-            { title: 'GDPay钱包有什么优势和特色？', path: `/assist/2?from=${$route.query.from}` }
+            { title: '什么是GDPay和GDB？', path: `/assist/1?from=${$nuxt.$route.query.from}` },
+            { title: 'GDPay钱包有什么优势和特色？', path: `/assist/2?from=${$nuxt.$route.query.from}` }
           ]
         },
         {
           title: '准备工作',
           data: [
-            { title: '实名认证', path: `/assist/3?from=${$route.query.from}` },
-            { title: '绑定支付方式', path: `/assist/4?from=${$route.query.from}` }
+            { title: '实名认证', path: `/assist/3?from=${$nuxt.$route.query.from}` },
+            { title: '绑定支付方式', path: `/assist/4?from=${$nuxt.$route.query.from}` }
           ]
         },
         {
           title: '购买与出售',
           data: [
-            { title: '如何购买GDB？', path: `/assist/5?from=${$route.query.from}` },
-            { title: '如何出售GDB？ 1. 挂单', path: `/assist/6?from=${$route.query.from}` },
-            { title: '如何出售GDB？ 2. 交易', path: `/assist/7?from=${$route.query.from}` }
+            { title: '如何购买GDB？', path: `/assist/5?from=${$nuxt.$route.query.from}` },
+            { title: '如何出售GDB？ 1. 挂单', path: `/assist/6?from=${$nuxt.$route.query.from}` },
+            { title: '如何出售GDB？ 2. 交易', path: `/assist/7?from=${$nuxt.$route.query.from}` }
           ]
         },
         {
           title: '钱包的应用',
           data: [
-            { title: '在游戏平台充值', path: `/assist/8?from=${$route.query.from}` },
-            { title: '在游戏平台提现', path: `/assist/9?from=${$route.query.from}` }
+            { title: '在游戏平台充值', path: `/assist/8?from=${$nuxt.$route.query.from}` },
+            { title: '在游戏平台提现', path: `/assist/9?from=${$nuxt.$route.query.from}` }
           ]
         },
         {
           title: '积分系统',
           data: [
-            { title: '什么是积分？', path: `/assist/10?from=${$route.query.from}` },
-            { title: '如何获得积分？', path: `/assist/11?from=${$route.query.from}` }
+            { title: '什么是积分？', path: `/assist/10?from=${$nuxt.$route.query.from}` },
+            { title: '如何获得积分？', path: `/assist/11?from=${$nuxt.$route.query.from}` }
           ]
         },
         {
           title: '常见问题',
           data: [
-            // { title: '忘记密码怎么办？', path: `/assist/12?from=${$route.query.from}` },
-            { title: '忘记支付密码怎么办？', path: `/assist/22?from=${$route.query.from}` },
-            { title: '交易收取费用吗？', path: `/assist/13?from=${$route.query.from}` },
-            { title: '交易出现问题怎么办？', path: `/assist/14?from=${$route.query.from}` }
+            // { title: '忘记密码怎么办？', path: `/assist/12?from=${$nuxt.$route.query.from}` },
+            { title: '忘记支付密码怎么办？', path: `/assist/22?from=${$nuxt.$route.query.from}` },
+            { title: '交易收取费用吗？', path: `/assist/13?from=${$nuxt.$route.query.from}` },
+            { title: '交易出现问题怎么办？', path: `/assist/14?from=${$nuxt.$route.query.from}` }
           ]
         },
         // {
