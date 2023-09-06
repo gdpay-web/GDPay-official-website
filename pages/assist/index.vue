@@ -152,6 +152,11 @@ export default {
         // }
       ],
     }
-  }
+  },
+  mounted() {
+    if ($nuxt.$route.query.from && window) {
+      window.from = 'gdpay_h5'
+    }
+  },
 }
 </script>

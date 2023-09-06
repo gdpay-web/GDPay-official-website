@@ -44,6 +44,11 @@ export default {
         date: '2022-09-06'
       }
     }
-  }
+  },
+  mounted() {
+    if ($nuxt.$route.query.from && window) {
+      window.from = 'gdpay_h5'
+    }
+  },
 }
 </script>
