@@ -14,17 +14,6 @@
       </div>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">2. 填入姓名、身份证号码，并上传身份证的正反面照片，然后点击“下一步”：</p>
       <AssistImage src="images/a3.png" />
-      <div>
-        <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">3.
-          在人像验证流程，勾选授权框并点击“同意授权并继续”，然后按照提示进行人脸识别；</p>
-        <div class="flex flex-row">
-          <AssistImage src="images/a4.png" />
-          <AssistImage src="images/a5.png" />
-        </div>
-        <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">4.
-          全部完成后，请耐心等待人工审核通过。若未通过，请检查确认资料无误，然后再次发起实名认证。</p>
-        <AssistImage src="images/a6.png" />
-      </div>
     </div>
   </div>
 </template>

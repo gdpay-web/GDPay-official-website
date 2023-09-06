@@ -16,6 +16,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         若上传的照片中身份信息与您绑定的身份信息相同，即可通过审核，同时将为您支付密码将重置为，您自助找回时输入的新支付密码
       </p>
+      <AssistImage src="images/a84.png" :is_full="true" />
     </div>
   </div>
 </template>
