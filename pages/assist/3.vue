@@ -49,6 +49,8 @@ export default {
     if ($nuxt.$route.query.from && window) {
       window.from = 'gdpay_h5'
     }
+    console.log(window, 'window')
+    console.log(123)
   },
 }
 </script>
