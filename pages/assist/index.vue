@@ -1,29 +1,26 @@
 <template>
   <div class="xl:flex xl:flex-wrap xl:justify-between">
-    <div class="w-[100%] text-[5vw] xl:text-[37px] my-[30px] text-center text-blue">
-      帮助中心
-    </div>
-    <div class="mt-[10vw] xl:mt-[60px] xl:w-[48%]" v-for="item in $route.query.from ? list_h5 : list_pc"
-      :key="item.title">
+    <div class="w-[100%] text-[5vw] xl:text-[37px] my-[30px] text-center text-blue">帮助中心</div>
+    <div class="mt-[10vw] xl:mt-[60px] xl:w-[48%]" v-for="item in $route.query.from ? list_h5 : list_pc" :key="item.title">
       <div class="flex justify-start items-baseline" :id="item.title">
         <span class="text-[#333333] text-[4.167vw] font-medium xl:text-[23px]">{{ item.title }}</span>
-        <span class="text-[#999999] text-[3.333vw] font-medium ml-[2.685vw] xl:text-[18px] xl:ml-[15px]">{{
-          item.data.length }} 篇文章</span>
+        <span class="text-[#999999] text-[3.333vw] font-medium ml-[2.685vw] xl:text-[18px] xl:ml-[15px]">{{ item.data.length }} 篇文章</span>
       </div>
       <hr class="border-t-[1px] border-[#ccc]" />
       <ul>
-        <li v-for="item2 in item.data"
+        <li
+          v-for="item2 in item.data"
           class="text-[3.333vw] mt-[6vw] flex items-center leading-tight pl-[1.481vw] xl:pl-[10px] xl:text-[18px] xl:mt-[30px] cursor-pointer"
-          @click="$router.push(item2.path)">
-          <img src="images/A-blue.png" class="w-[1.204vw] h-[2.13vw] mr-[1.759vw] xl:w-[6px] xl:h-[11px] xl:mr-[5px]"
-            alt="" />
+          @click="$router.push(item2.path)"
+        >
+          <img src="images/A-blue.png" class="w-[1.204vw] h-[2.13vw] mr-[1.759vw] xl:w-[6px] xl:h-[11px] xl:mr-[5px]" alt="" />
           {{ item2.title }}
         </li>
       </ul>
     </div>
   </div>
 </template>
-<script >
+<script>
 export default {
   layout: 'layout-f',
   data() {
@@ -135,10 +132,10 @@ export default {
             { title: '交易出现问题怎么办？', path: `/assist/14` }
           ]
         },
-        // {
-        //   title: '搬砖教程',
-        //   data: [{ title: '搬砖教程', path: '/assist/15' }]
-        // },
+        {
+          title: '搬砖教程',
+          data: [{ title: '搬砖教程', path: '/assist/15' }]
+        }
         // {
         //   title: 'USDT相关',
         //   data: [
@@ -150,7 +147,7 @@ export default {
         //     { title: '什么是USDT?', path: '/assist/21' }
         //   ]
         // }
-      ],
+      ]
     }
   },
   mounted() {
@@ -158,6 +155,6 @@ export default {
       window.from = 'gdpay_h5'
       $nuxt.$route.query.from = 'gdpay_h5'
     }
-  },
+  }
 }
 </script>
