@@ -134,7 +134,7 @@ export default {
         },
         {
           title: '搬砖教程',
-          data: [{ title: '搬砖教程', path: '/assist/15' }]
+          data: [{ title: '搬砖教程', path: '/assist/15_h5' }]
         }
         // {
         //   title: 'USDT相关',

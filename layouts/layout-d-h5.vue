@@ -3,7 +3,7 @@
   <div class="py-[3.796vw] bg-cover bg-no-repeat xl:bg-else-bg-pc xl:min-h-full">
     <Header class="hidden xl:block" />
     <!-- <BurgerMenu class="xl:hidden" /> -->
-    <Back />
+    <!-- <Back /> -->
     <Nuxt />
     <BottomBack />
     <client-only>
