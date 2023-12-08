@@ -7,7 +7,7 @@
     </p>
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">发布日期 {{ data.date }}</p>
     <div class="text-[#666] bg-white rounded-xl xl:border-[1px] xl:border-[#eee] xl:p-[30px] xl:min-h-[500px]">
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">要使用GDPay钱包的各种功能，您需要绑定至少一种支付方式（用于收款/付款）。</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">要使用OFPay钱包的各种功能，您需要绑定至少一种支付方式（用于收款/付款）。</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">1. 在下方点击“我的”进入个人页面，再点击您要添加的收款方式。先绑定一张银行卡吧：</p>
       <AssistImage src="images/a8.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">2. 选择银行，填入银行卡号（必须使用和实名信息一致的本人银行卡），然后点击“确认”：</p>

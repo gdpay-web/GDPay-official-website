@@ -7,7 +7,7 @@
     </p>
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">发布日期 {{ data.date }}</p>
     <div class="text-[#666] bg-white rounded-xl xl:border-[1px] xl:border-[#eee] xl:p-[30px] xl:min-h-[500px]">
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">您可以使用GDPay钱包APP，进入GDB交易市场方便地挂单出售GDB。</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">您可以使用OFPay钱包APP，进入OFB交易市场方便地挂单出售OFB。</p>
       <video width="320" height="240" autoplay class="mx-auto xl:w-[390px] w-[42vw] shadow-lg mt-[20px] xl:mt-[40px]" controls>
         <source src="videos/assist_6.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -15,10 +15,10 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">1. 在首页点击“卖币”按钮：</p>
       <AssistImage src="images/a22.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
-        2. 填入卖币金额，选择拆分方式及收款方式（可多选），然后点击“确认出售”。这里我们出售100GDB，选择“可拆分”，并同时选择银行卡和微信支付两种收款方式：
+        2. 填入卖币金额，选择拆分方式及收款方式（可多选），然后点击“确认出售”。这里我们出售100OFB，选择“可拆分”，并同时选择银行卡和微信支付两种收款方式：
       </p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[14px] text-blue bg-[#eee] xl:p-[15px] rounded-[7px]">
-        注意：若选择“可拆分”，那么当买家在购买您的GDB时，可以只购买部分金额；而若选择“不可拆分”，那么当买家在购买您的GDB时，必须完整购买您出售的全部金额。
+        注意：若选择“可拆分”，那么当买家在购买您的OFB时，可以只购买部分金额；而若选择“不可拆分”，那么当买家在购买您的OFB时，必须完整购买您出售的全部金额。
       </p>
       <AssistImage src="images/a23.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">3. 然后输入支付密码（注意，是支付密码，不是登录密码），然后点击“提交”：</p>
@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       data: {
-        title: '如何出售GDB？ 1. 挂单',
+        title: '如何出售OFB？ 1. 挂单',
         date: '2022-09-06'
       }
     }

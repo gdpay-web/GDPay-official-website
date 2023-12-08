@@ -10,7 +10,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px] font-bold text-black">充币没有到账怎么处理?</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">充币没有到账怎么处理 充币没到账要怎么处理? 区块链资产转账分为三个步骤: (1) 提出(2) 区块确认(3) 入账</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
-        如果您的充值已有区块确认，GDpay钱包会直接帮您 入账，如果没有入账，您可直接
+        如果您的充值已有区块确认，OFpay钱包会直接帮您 入账，如果没有入账，您可直接
         <a class="text-[2.963vw] xl:text-[18px] text-blue inline" href="https://tronscan.org/#l?" target="_blank">联系客服</a>
       </p>
     </div>

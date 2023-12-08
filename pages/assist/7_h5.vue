@@ -7,12 +7,12 @@
     </p>
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">发布日期 {{ data.date }}</p>
     <div class="text-[#666] bg-white rounded-xl xl:border-[1px] xl:border-[#eee] xl:p-[30px] xl:min-h-[500px]">
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">当您在市场中挂出了卖单之后，如果有其他用户选择购买您的GDB，那么就进入下面的交易流程。</p>
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">1. 若有其他用户选择购买您的GDB，那么您会在首页中看到您的卖单状态变为“确认交易中”。此时，点击该卖单进行查看：</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">当您在市场中挂出了卖单之后，如果有其他用户选择购买您的OFB，那么就进入下面的交易流程。</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">1. 若有其他用户选择购买您的OFB，那么您会在首页中看到您的卖单状态变为“确认交易中”。此时，点击该卖单进行查看：</p>
       <AssistImage src="images/a28-1.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">2. 也可以在“订单”页面中看到您所挂出的卖单状态变化，并点击“订单详情”查看您的卖单：</p>
       <AssistImage src="images/a28-2.png" />
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">3. 看到有一个用户想要购买您的GDB。如果您确定要和这个买家进行交易，就点击“确认交易”：</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">3. 看到有一个用户想要购买您的OFB。如果您确定要和这个买家进行交易，就点击“确认交易”：</p>
       <AssistImage src="images/a30.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">4. 接下来，就请耐心等待买家向您付款吧。在等待过程中，您也可以点击“联系买家”，向买家发消息：</p>
       <AssistImage src="images/a31.png" />
@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       data: {
-        title: '如何出售GDB？ 2. 交易',
+        title: '如何出售OFB？ 2. 交易',
         date: '2022-09-06'
       }
     }

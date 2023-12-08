@@ -1,6 +1,7 @@
-# GDPay-official-website
+# OFPay-official-website
 
 ## Build Setup
+
 ```bash
 # install dependencies
 $ yarn install

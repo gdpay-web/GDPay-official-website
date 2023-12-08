@@ -7,10 +7,10 @@
     </p>
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">发布日期 {{ data.date }}</p>
     <div class="text-[#666] bg-white rounded-xl xl:border-[1px] xl:border-[#eee] xl:p-[30px] xl:min-h-[500px]">
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">GDB 是一种拥有稳定价值的加密货币。GDB锚定RMB价值，兑换比例为1:1，即1GDB=1RMB；</p>
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">GDPay是专用于GDB的钱包，集存储、转账、交易功能为一体。</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">OFB 是一种拥有稳定价值的加密货币。OFB锚定RMB价值，兑换比例为1:1，即1OFB=1RMB；</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">OFPay是专用于OFB的钱包，集存储、转账、交易功能为一体。</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
-        您可以使用GDPay钱包APP，随时方便地进行资产储备与兑换，自由转账、买入、卖出GDB代币；也可以使用GDPay在游戏平台充值或者提现。
+        您可以使用OFPay钱包APP，随时方便地进行资产储备与兑换，自由转账、买入、卖出OFB代币；也可以使用OFPay在游戏平台充值或者提现。
       </p>
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       data: {
-        title: '什么是GDPay和GDB？',
+        title: '什么是OFPay和OFB？',
         date: '2022-09-06'
       }
     }

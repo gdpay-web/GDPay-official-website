@@ -17,7 +17,7 @@
           <img src="images/layer-group-solid.png" class="w-[9.167vw] ml-[10vw] xl:w-[50px] xl:m-0 xl:my-[35px]" alt="" />
           <div class="w-[53vw] xl:w-full xl:px-[30px] xl:mb-[30px]">
             <p class="text-[5vw] text-blue xl:text-[24px] xl:text-center font-medium">全平台支持SDK</p>
-            <p class="text-[3.333vw] text-[#666666] mt-[1.5vw] text-justify xl:text-[14px] xl:mt-[10px]">满足您全部的APP或者网站需求。通过SDK一键集成至您的软件，快速使您的产品拥有GD币收款能力</p>
+            <p class="text-[3.333vw] text-[#666666] mt-[1.5vw] text-justify xl:text-[14px] xl:mt-[10px]">满足您全部的APP或者网站需求。通过SDK一键集成至您的软件，快速使您的产品拥有OF币收款能力</p>
           </div>
         </div>
         <div class="gd-rounded mx-auto flex items-center justify-center my-[7vw] xl:my-[20px]">
@@ -25,7 +25,10 @@
           <img src="images/apple-brands.png" class="h-[9.352vw] xl:h-[40px] mx-[10vw] xl:mx-[20px]" alt="" />
           <img src="images/HTML5.png" class="h-[9.352vw] xl:h-[40px]" alt="" />
         </div>
-        <button class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto xl:w-[329px] xl:text-[18px] xl:h-[68px] cursor-pointer" @click="$router.push('/source-download')">
+        <button
+          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto xl:w-[329px] xl:text-[18px] xl:h-[68px] cursor-pointer"
+          @click="$router.push('/source-download')"
+        >
           <img src="images/download-solid-white.png" class="w-[4.815vw] mr-[2vw] xl:w-[26px] xl:mr-[10px]" alt="" />
           资源下载
         </button>
@@ -40,7 +43,10 @@
             </p>
           </div>
         </div>
-        <button class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto mt-[4vw] xl:w-[329px] xl:text-[18px] xl:h-[68px] xl:mt-[50px] cursor-pointer" @click="$router.push('/document')">
+        <button
+          class="text-[3.333vw] gd-rounded h-[12.5vw] w-[83.333vw] flex-c-c bg-blue text-white mx-auto mt-[4vw] xl:w-[329px] xl:text-[18px] xl:h-[68px] xl:mt-[50px] cursor-pointer"
+          @click="$router.push('/document')"
+        >
           <img src="images/file-code-solid-white.png" class="w-[4.815vw] mr-[2vw] xl:w-[26px] xl:mr-[10px]" alt="" />
           开发文档
         </button>
@@ -50,39 +56,51 @@
           <img src="images/person-dots-from-line-solid.png" class="w-[10.741vw] ml-[9vw] xl:w-[74px] xl:m-0 xl:my-[35px]" alt="" />
           <div class="w-[53vw] xl:w-full xl:px-[30px] xl:mb-[30px]">
             <p class="text-[5vw] text-blue xl:text-[24px] xl:text-center font-medium">商户管理平台</p>
-            <p class="text-[3.333vw] text-[#666666] mt-[1.5vw] text-justify xl:text-[14px] xl:mt-[10px]">管理自己的GD币。您可在商户管理平台完成运营情况监控、财务对账、GD币充值、提现等操作。</p>
+            <p class="text-[3.333vw] text-[#666666] mt-[1.5vw] text-justify xl:text-[14px] xl:mt-[10px]">管理自己的OF币。您可在商户管理平台完成运营情况监控、财务对账、OF币充值、提现等操作。</p>
           </div>
         </div>
       </div>
     </div>
     <Title title="合作流程" class="my-[8vw]" />
     <div class="flex flex-wrap justify-start xl:justify-between items-center pl-[4.5vw]">
-      <div class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['1.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]">
+      <div
+        class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['1.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]"
+      >
         <p class="mt-[2.444vw] text-[3.33vw] text-[#333333] xl:text-[20px] xl:ml-0 xl:w-[100%] xl:pb-[20px] xl:mt-[15px] text-center">提交申请</p>
         <img src="images/paste-regular.png" class="h-[6.8vw] xl:h-[40px]" alt="" />
       </div>
       <Process />
-      <div class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['2.'] flex-col-reverse xl:w-[150px] pt-[5vw] pb-[2.5vw] xl:pb-0 xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]">
+      <div
+        class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['2.'] flex-col-reverse xl:w-[150px] pt-[5vw] pb-[2.5vw] xl:pb-0 xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]"
+      >
         <p class="mt-[2.444vw] text-[3.33vw] text-[#333333] xl:text-[20px] xl:ml-0 xl:w-[100%] xl:pb-[20px] xl:mt-[15px] text-center">等待商务关系</p>
         <img src="images/clock-regular.png" class="h-[6.8vw] xl:h-[40px]" alt="" />
       </div>
       <Process />
-      <div class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['3.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]">
+      <div
+        class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['3.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]"
+      >
         <p class="mt-[2.444vw] text-[3.33vw] text-[#333333] xl:text-[20px] xl:ml-0 xl:w-[100%] xl:pb-[20px] xl:mt-[15px] text-center">签约合同</p>
         <img src="images/file-signature-solid.png" class="h-[6.8vw] xl:h-[40px]" alt="" />
       </div>
       <Process />
-      <div class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['4.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]">
+      <div
+        class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['4.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]"
+      >
         <p class="mt-[2.444vw] text-[3.33vw] text-[#333333] xl:text-[20px] xl:ml-0 xl:w-[100%] xl:pb-[20px] xl:mt-[15px] text-center">交付物</p>
         <img src="images/box-archive-solid.png" class="h-[6.8vw] xl:h-[40px]" alt="" />
       </div>
       <Process />
-      <div class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['5.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]">
+      <div
+        class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['5.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]"
+      >
         <p class="mt-[2.444vw] text-[3.33vw] text-[#333333] xl:text-[20px] xl:ml-0 xl:w-[100%] xl:pb-[20px] xl:mt-[15px] text-center">技术支持</p>
         <img src="images/laptop-code-solid.png" class="h-[6.8vw] xl:h-[40px]" alt="" />
       </div>
       <Process />
-      <div class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['6.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]">
+      <div
+        class="w-[39.8vw] h-[auto] gd-rounded mx-0 flex items-center gd-border tag before:content-['6.'] flex-col-reverse xl:w-[150px] pb-[2.5vw] xl:pb-0 pt-[5vw] xl:pt-[60px] xl:p-0 xl:mx-0 justify-end xl:mb-0 mb-[9.8vw]"
+      >
         <p class="mt-[2.444vw] text-[3.33vw] text-[#333333] xl:text-[20px] xl:ml-0 xl:w-[100%] xl:pb-[20px] xl:mt-[15px] text-center">完成上线</p>
         <img src="images/circle-check-regular.png" class="h-[6.8vw] xl:h-[40px]" alt="" />
       </div>

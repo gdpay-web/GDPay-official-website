@@ -11,7 +11,11 @@
         <a :href="setting.config.serviceURL" target="_blank"><img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw] xl:hidden" alt="" /></a>
         <ul class="mt-[6.944vw] xl:flex xl:justify-between xl:mt-[100px]">
           <!-- mobile -->
-          <li v-for="(item, index) in footerlist.data" class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden" @click="toggle(item.active, index)">
+          <li
+            v-for="(item, index) in footerlist.data"
+            class="w-[83.333vw] text-center bg-[#005dd6] leading-[12.5vw] gd-rounded mb-[3.148vw] mx-auto relative xl:hidden"
+            @click="toggle(item.active, index)"
+          >
             {{ item.title }}
             <img src="images/arrow-down.png" class="absolute w-[3.333vw] right-[3.741vw] top-[5.741vw]" alt="" />
             <div v-show="item.active">
@@ -35,9 +39,8 @@
   </footer>
 </template>
 <script setup>
-import { reactive, ref } from 'vue'
 import qrcode from 'qrcode'
-import { onMounted } from 'vue'
+import { onMounted, reactive } from 'vue'
 // import json from 'static/config.json'
 
 const setting = reactive({
@@ -56,7 +59,7 @@ onMounted(() => {
 const footerlist = reactive({
   data: [
     {
-      title: 'GDPAY',
+      title: 'OFPAY',
       active: false,
       list: [
         { label: '服务条款', path: '/agreement/service' },

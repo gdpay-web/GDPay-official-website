@@ -29,8 +29,8 @@ export default {
         {
           title: '产品简介',
           data: [
-            { title: '什么是GDPay和GDB？', path: '/assist/1' },
-            { title: 'GDPay钱包有什么优势和特色？', path: '/assist/2' }
+            { title: '什么是OFPay和OFB？', path: '/assist/1' },
+            { title: 'OFPay钱包有什么优势和特色？', path: '/assist/2' }
           ]
         },
         {
@@ -43,9 +43,9 @@ export default {
         {
           title: '购买与出售',
           data: [
-            { title: '如何购买GDB？', path: '/assist/5' },
-            { title: '如何出售GDB？ 1. 挂单', path: '/assist/6' },
-            { title: '如何出售GDB？ 2. 交易', path: '/assist/7' }
+            { title: '如何购买OFB？', path: '/assist/5' },
+            { title: '如何出售OFB？ 1. 挂单', path: '/assist/6' },
+            { title: '如何出售OFB？ 2. 交易', path: '/assist/7' }
           ]
         },
         {
@@ -90,8 +90,8 @@ export default {
         {
           title: '产品简介',
           data: [
-            { title: '什么是GDPay和GDB？', path: `/assist/1_h5` },
-            { title: 'GDPay钱包有什么优势和特色？', path: `/assist/2_h5` }
+            { title: '什么是OFPay和OFB？', path: `/assist/1_h5` },
+            { title: 'OFPay钱包有什么优势和特色？', path: `/assist/2_h5` }
           ]
         },
         {
@@ -104,9 +104,9 @@ export default {
         {
           title: '购买与出售',
           data: [
-            { title: '如何购买GDB？', path: `/assist/5_h5` },
-            { title: '如何出售GDB？ 1. 挂单', path: `/assist/6_h5` },
-            { title: '如何出售GDB？ 2. 交易', path: `/assist/7_h5` }
+            { title: '如何购买OFB？', path: `/assist/5_h5` },
+            { title: '如何出售OFB？ 1. 挂单', path: `/assist/6_h5` },
+            { title: '如何出售OFB？ 2. 交易', path: `/assist/7_h5` }
           ]
         },
         {

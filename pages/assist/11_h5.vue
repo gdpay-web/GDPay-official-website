@@ -11,7 +11,7 @@
       <p class="text-[2.963vw] mt-[3vw] text-justify xl:text-[18px]">1. 每日签到可获得积分，连续多日签到将获得更多积分；</p>
       <p class="text-[2.963vw] mt-[1.6vw] text-justify xl:text-[18px]">2. 完成每日任务获得每日活跃度，活跃度足够时可领取积分；</p>
       <p class="text-[2.963vw] mt-[1.6vw] text-justify xl:text-[18px]">3. 完成累计任务，可直接获得积分；</p>
-      <p class="text-[2.963vw] mt-[1.6vw] text-justify xl:text-[18px]">4. 在任意游戏平台使用GDPay上分/下分，将按金额比例获得积分。</p>
+      <p class="text-[2.963vw] mt-[1.6vw] text-justify xl:text-[18px]">4. 在任意游戏平台使用OFPay上分/下分，将按金额比例获得积分。</p>
       <p class="text-[2.963vw] mt-[3vw] text-justify xl:text-[18px]">注意：积分将定期清零，请留意积分页面上方的“积分清零时间”。</p>
     </div>
   </div>

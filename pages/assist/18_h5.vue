@@ -8,7 +8,7 @@
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">发布日期 {{ data.date }}</p>
     <div class="text-[#666] bg-white rounded-xl xl:border-[1px] xl:border-[#eee] xl:p-[30px] xl:min-h-[500px]">
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px] font-bold text-black">充币需要手续费吗?</p>
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">目前各交易所和钱包充币入账都是免费的。但是 提币时需要收费。如果是通过交易所和GDpay钱包提币 需要收取0.8USDT。</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">目前各交易所和钱包充币入账都是免费的。但是 提币时需要收费。如果是通过交易所和OFpay钱包提币 需要收取0.8USDT。</p>
     </div>
   </div>
 </template>
