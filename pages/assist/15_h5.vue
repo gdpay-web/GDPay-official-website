@@ -7,10 +7,10 @@
     </p>
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">发布日期 {{ data.date }}</p>
     <div class="text-[#666] bg-white rounded-xl xl:border-[1px] xl:border-[#eee] xl:p-[30px] xl:min-h-[500px]">
-      <video width="320" height="240" autoplay class="mx-auto xl:w-[390px] w-[42vw] shadow-lg mt-[20px] xl:mt-[40px]" controls>
+      <!-- <video width="320" height="240" autoplay class="mx-auto xl:w-[390px] w-[42vw] shadow-lg mt-[20px] xl:mt-[40px]" controls>
         <source src="videos/assist_15.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> -->
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">1. 首先在首页点击<b>“搬砖赚钱”</b></p>
       <AssistImage src="images/a15-1.png" />
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">2. 搬砖需要使用<b>矿工币</b>，如果没有矿工币的话，我们可以先充值<b>USDT</b></p>

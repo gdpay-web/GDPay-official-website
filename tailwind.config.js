@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: '#0b75ff'
+        blue: '#1E2D7E'
       },
       backgroundImage: {
         'home-bg': "url('static/images/bg.png')",

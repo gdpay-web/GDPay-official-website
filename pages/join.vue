@@ -11,7 +11,7 @@
     <div class="w-[90.741vw] gd-border gd-rounded next-tag py-[7vw] my-[5vw] flex-c-c xl:w-[450px] xl:text-[18px] xl:h-[113px] xl:py-0">
       <img src="images/envelope-regular.png" class="w-[11.852vw] mr-[3.7vw] xl:w-[64px] xl:mr-[10px]" alt="" />
       <div class="text-[#333333] font-bold">
-        <p>{{config.email}}</p>
+        <p>{{ config.email }}</p>
         <p>投递您的简历</p>
       </div>
     </div>
