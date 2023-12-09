@@ -4,9 +4,9 @@
       <div class="xl:flex-grow">
         <section class="flex justify-start pt-[7.593vw] items-center xl:pt-[60px]">
           <img src="images/logo-w.png" class="w-[11.204vw] mr-[3.426vw] xl:w-[67px] xl:mr-[15px]" alt="" />
-          <p class="text-[5.556vw] xl:text-[30px]">现在，请您下载吧</p>
+          <!-- <p class="text-[5.556vw] xl:text-[30px]">现在，请您下载吧</p> -->
         </section>
-        <div class="bg-[#85baff] w-[100%] h-[1px] hidden xl:block absolute left-0 xl:mt-[30px]"></div>
+        <div class="bg-[#f3f4f5] w-[100%] h-[1px] hidden xl:block absolute left-0 xl:mt-[30px]"></div>
         <DownloadButton class="mt-[9.167vw] xl:hidden" type="white" :download="false" />
         <a :href="setting.config.serviceURL" target="_blank"><img src="images/contact.png" class="w-[32.407vw] mx-auto mt-[7.315vw] xl:hidden" alt="" /></a>
         <ul class="mt-[6.944vw] xl:flex xl:justify-between xl:mt-[100px]">
@@ -31,10 +31,10 @@
           </li>
         </ul>
       </div>
-      <div class="px-[19.259vw] xl:w-[250px] xl:pt-[35px] xl:px-0 xl:flex xl:flex-col xl:items-end xl:ml-[340px] relative z-[2]">
+      <!-- <div class="px-[19.259vw] xl:w-[250px] xl:pt-[35px] xl:px-0 xl:flex xl:flex-col xl:items-end xl:ml-[340px] relative z-[2]">
         <canvas id="canvas2" class="hidden w-[150px] xl:block rounded-lg"></canvas>
         <a :href="setting.config.serviceURL" target="_blank"><img src="images/contact-pc.png" class="hidden w-[250px] mt-[33px] xl:block cursor-pointer" alt="" /></a>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>

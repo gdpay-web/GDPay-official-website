@@ -18,7 +18,7 @@
         >
           开放支付
         </li>
-        <li class="ml-[44px] cursor-pointer font-medium" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li>
+        <!-- <li class="ml-[44px] cursor-pointer font-medium" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li> -->
         <li class="ml-[44px] cursor-pointer font-medium" :class="{ 'text-blue': $route.path === '/announcement' }" @click="goto('/announcement')">最新公告</li>
         <li class="ml-[44px] cursor-pointer font-medium" :class="{ 'text-blue': $route.path === '/assist' }" @click="goto('/assist')">帮助中心</li>
       </ul>
@@ -35,7 +35,7 @@
           <li class="leading-[11vw] under-line" :class="{ 'text-blue': $route.path === '/' }" @click="goto('/')">OFPAY</li>
           <li class="leading-[11vw] under-line" :class="{ 'text-blue': $route.path === '/brick_to_earn' }" @click="goto('/brick_to_earn')">搬砖赚钱</li>
           <li class="leading-[11vw] under-line" :class="{ 'text-blue': $route.path === '/solution' }" @click="goto('/solution')">开放支付</li>
-          <li class="leading-[11vw] under-line" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li>
+          <!-- <li class="leading-[11vw] under-line" :class="{ 'text-blue': $route.path === '/download' }" @click="goto('/download')">下载APP</li> -->
           <li class="leading-[11vw] under-line" :class="{ 'text-blue': $route.path === '/announcement' }" @click="goto('/announcement')">最新公告</li>
           <li class="leading-[11vw]" :class="{ 'text-blue': $route.path === '/assist' }" @click="goto('/assist')">帮助中心</li>
         </template>

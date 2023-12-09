@@ -7,10 +7,10 @@
     <div class="text-[#666]">
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         近期有很多不法份子冒充OFPAY商务邀请进行开户，骗取首充奖励。未避免您的损失请各位合作伙伴在开户前，先核对真实身份<br />
-        OFpay唯一官方网站：
+        <!-- OFpay唯一官方网站：
         <a class="cursor-pointer text-blue" href="https://www.gdpay333.com/" target="_blank">https://www.gdpay333.com/</a> <br />
         OFPay唯一官方商务飞机：@OFPAY<br />
-        <QrcodeImage src="images/anno2.png" />
+        <QrcodeImage src="images/anno2.png" /> -->
       </p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         另外 OFPay官方人员不会以任何形式向您发送转款链接<br />
