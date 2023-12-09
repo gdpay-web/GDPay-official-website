@@ -5,7 +5,7 @@
     </p>
     <p class="text-[2.407vw] mt-[17vw] my-[6.5vw] text-[#999999] xl:text-[14px] xl:my-[30px]">{{ data.date }}</p>
     <div class="text-[#666]">
-      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">'OF是一种拥有稳定价值的加密货币，OF币锚定RMB价值，即1OF=1RMB；</p>
+      <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">OF是一种拥有稳定价值的加密货币，OF币锚定RMB价值，即1OF=1RMB；</p>
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         买卖币请通过在我司APP市场订单正常转币交易。卖币时一定要以收款账户有收到钱，才能转币。（私下联系以任何风控理由要求进行私下交易的都是骗子，请勿相信）',
       </p>
