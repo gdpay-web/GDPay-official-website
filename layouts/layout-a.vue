@@ -24,14 +24,14 @@ const tabs = [
     content: '助力您的商业新思路'
   },
   {
-    src: 'images/file-code-solid.png',
+    src: 'images/api_doc.png',
     route: 'document',
     name: '开发文档',
     title: '开发文档',
     content: ''
   },
   {
-    src: 'images/download-solid.png',
+    src: 'images/download_file.png',
     route: 'source-download',
     name: '资源下载',
     title: '资源下载',

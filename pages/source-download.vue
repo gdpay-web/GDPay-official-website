@@ -1,6 +1,6 @@
 <template>
   <div class="flex-c-c flex-col mt-[32.222vw] text-[3.333vw] text-[#666666] pb-[32.222vw] xl:text-[25px] xl:mt-[200px] xl:pb-[200px]">
-    <img src="images/download_file.png" class="w-[19.074vw] xl:w-[144px]" alt="" />
+    <img src="images/triangle-exclamation-solid.png" class="w-[19.074vw] xl:w-[144px]" alt="" />
     <p class="mt-[6.667vw] xl:mt-[50px]">非常抱歉，SDK暂时未开放下载</p>
     <p>请与我们成为合作商家后，直接向服务您的商务人员索取</p>
     <p class="text-blue mt-[5.833vw] xl:mt-[43px]">我们会加快开放步伐，请您保持关注</p>

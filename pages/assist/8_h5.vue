@@ -10,7 +10,7 @@
       <p class="text-[2.963vw] mt-[4vw] xl:mt-[2vw] text-justify xl:text-[18px]">
         您可以在任意支持OFPay的游戏平台进行充值。充值过程中，需要扫描平台方提供的二维码时，请打开OFPay钱包，并点击下方中间的按钮进行扫码：
       </p>
-      <AssistImage src="images/a82.png" :is_full="true" />
+      <!-- <AssistImage src="images/a82.png" :is_full="true" /> -->
     </div>
   </div>
 </template>
