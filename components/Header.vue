@@ -3,10 +3,10 @@
     <header
       class="pt-[3.246vw] px-[3.63vw] flex justify-between items-center xl:h-[79px] xl:pt-0 xl:px-[30px] xl:bg-white xl:shadow-gd-pc xl:fixed xl:w-full xl:z-10 xl:top-0 xl:bg-gradient-to-b xl:from-[#fff] xl:via-[#f5f4f4] xl:to-[#ecebeb] w-[100vw] z-10"
     >
-      <img src="images/logo-w-text.png" class="w-[24.074vw] xl:w-[173px] cursor-pointer xl:hidden" alt="" @click="$router.push('/')" v-if="type === 'dark'" />
-      <img src="images/logo.png" class="w-[24.074vw] xl:w-[173px] cursor-pointer hidden xl:block" alt="" @click="$router.push('/')" v-if="type === 'dark'" />
+      <img src="images/logo-w-text.png" class="w-[20.074vw] xl:w-[120px] cursor-pointer xl:hidden" alt="" @click="$router.push('/')" v-if="type === 'dark'" />
+      <img src="images/logo.png" class="w-[20.074vw] xl:w-[120px] cursor-pointer hidden xl:block" alt="" @click="$router.push('/')" v-if="type === 'dark'" />
 
-      <img src="images/logo.png" class="w-[24.074vw] xl:w-[173px] cursor-pointer" alt="" @click="$router.push('/')" v-if="type !== 'dark'" />
+      <img src="images/logo.png" class="w-[20.074vw] xl:w-[120px] cursor-pointer" alt="" @click="$router.push('/')" v-if="type !== 'dark'" />
       <img src="images/menu.png" class="w-[6.944vw] xl:hidden" alt="" @click="visiable = !visiable" />
       <ul class="text-[#666666] text-[21px] hidden xl:flex">
         <li class="cursor-pointer font-medium" :class="{ 'text-blue': $route.path === '/' }" @click="goto('/')">OFPAY</li>
