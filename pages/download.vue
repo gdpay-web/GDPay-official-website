@@ -25,7 +25,7 @@ import { onMounted, ref } from 'vue'
 const isIOS = ref(false)
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.ofupay888.com/download', { width: 180 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.ofpay888.com/download', { width: 180 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })

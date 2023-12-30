@@ -242,12 +242,12 @@ const isIOS = ref(false)
 const slide_index = ref(0)
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.ofupay888.com/download/', { width: 226 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.ofpay888.com/download/', { width: 226 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
 
-  qrcode.toCanvas(document.getElementById('canvas-m'), 'https://www.ofupay888.com/download/', { width: '100%' }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas-m'), 'https://www.ofpay888.com/download/', { width: '100%' }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
