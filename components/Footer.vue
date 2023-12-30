@@ -48,7 +48,7 @@ const setting = reactive({
 })
 
 onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas2'), 'https://www.ofpay888.com/download', { width: 150 }, function (error) {
+  qrcode.toCanvas(document.getElementById('canvas2'), window.config.qrcode_url || 'https://www.ofpay888.com/download', { width: 150 }, function (error) {
     if (error) console.error(error)
     console.log('success!')
   })
