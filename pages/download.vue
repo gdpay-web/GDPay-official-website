@@ -4,7 +4,7 @@
     <Header />
     <div class="xl:w-[1200px] xl:m-auto xl:absolute xl:top-[200px] xl:left-[50%] xl:translate-x-[-50%]">
       <p class="text-blue text-[8.333vw] text-center pt-[18vw] xl:mt-0 xl:text-[63px] xl:text-left font-medium xl:pt-[0px]">助您安全、自由支付</p>
-      <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25px] xl:text-left">GD币 - 世界通用数字资产，恒定人民币汇率</p>
+      <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25px] xl:text-left">OF币 - 世界通用数字资产，恒定人民币汇率</p>
       <p class="text-[3.333vw] text-[#666666] text-center xl:text-[25px] xl:text-left">100%互兑 无需远行即可畅玩全球</p>
       <div class="w-[555px] hidden xl:inline-block text-center">
         <canvas id="canvas" class="w-[150px] mt-[50px] inline-block rounded-lg border-[1px] border-black/10"></canvas>
@@ -18,18 +18,21 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import qrcode from 'qrcode'
-import { onMounted, ref } from 'vue'
-
-const isIOS = ref(false)
-
-onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas'), 'https://www.gdpay3.com/download', { width: 180 }, function (error) {
-    if (error) console.error(error)
-    console.log('success!')
-  })
-
-  isIOS.value = /iPad|iPhone/i.test(navigator.userAgent)
-})
+export default {
+  layout: 'download',
+  data() {
+    return {
+      isIOS: false
+    }
+  },
+  mounted: function () {
+    qrcode.toCanvas(document.getElementById('canvas'), window.config.qrcode_url || 'https://www.ofpay888.com/download', { width: 180 }, function (error) {
+      if (error) console.error(error)
+      console.log('success!')
+    })
+    this.isIOS = /iPad|iPhone/i.test(navigator.userAgent)
+  }
+}
 </script>
