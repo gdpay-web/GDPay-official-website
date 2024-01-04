@@ -18,18 +18,21 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import qrcode from 'qrcode'
-import { onMounted, ref } from 'vue'
-
-const isIOS = ref(false)
-
-onMounted(() => {
-  qrcode.toCanvas(document.getElementById('canvas'), window.config.qrcode_url, { width: 180 }, function (error) {
-    if (error) console.error(error)
-    console.log('success!')
-  })
-
-  isIOS.value = /iPad|iPhone/i.test(navigator.userAgent)
-})
+export default {
+  layout: 'download',
+  data() {
+    return {
+      isIOS: false
+    }
+  },
+  mounted: function () {
+    qrcode.toCanvas(document.getElementById('canvas'), window.config.qrcode_url || 'https://www.ofpay888.com/download', { width: 180 }, function (error) {
+      if (error) console.error(error)
+      console.log('success!')
+    })
+    this.isIOS = /iPad|iPhone/i.test(navigator.userAgent)
+  }
+}
 </script>
