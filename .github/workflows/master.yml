@@ -1,4 +1,4 @@
-name: Deploy via ftp
+name: GDPAY
 on:
   push:
     branches: ["master"]
